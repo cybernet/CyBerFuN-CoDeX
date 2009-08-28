@@ -1,0 +1,26 @@
+#poll_container {
+	width:400px;
+	margin:5px;
+	padding:5px;
+	font-family:comic sans ms, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#CFC1D9;
+	border:1px solid #333333;
+}
+#poll_title {
+	font-size: 14px;
+	font-weight:bold;
+	border:none;
+	text-align:center;
+}
+.barmax, .bar {
+	border:1px solid #666666;
+	padding-left:2px;
+	padding-right:2px;
+}
+.bar {
+  background: #cc4400;
+}
+.barmax {
+	background: #0033CC;
+}

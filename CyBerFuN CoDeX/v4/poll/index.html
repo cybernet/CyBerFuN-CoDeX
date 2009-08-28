@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ajax Poll</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	function loadpoll()
+	{
+		$("#loading").html("Loading...");
+		$("#loading").fadeIn("fast");
+		$("#poll_container").fadeIn("slow", function () {
+		 
+		  $.post("poll.core.php", {action:"load"}, function (r){ $("#poll_container").html(r); 
+			if($("#results").hasClass("results"))
+			{
+				$("div[id='poll_result']").each(function(){
+					var percentage = $(this).attr("name");
+					
+					$(this).css({width: "0%"}).animate({
+					width: percentage+"%"}, 1600);
+					
+					});
+			 $("#loading").fadeOut("fast"); 		
+			}
+		 
+		},"html" );});
+	}
+	function vote()
+	{
+		var pollId = $("#pollId").val();
+		//alert(pollId);
+		var choice = $("#choice").val();
+		//alert(choice);
+		$("#poll_container").empty();
+		$("#poll_container").append("<div id=\"loading\" style=\"display:none\"><\/div>");
+		$("#loading").fadeIn("fast", function () {$("#loading").html("Please wait while your vote is stored...");});
+		
+			$.post("poll.core.php",{action:"vote",pollId:pollId,choice:choice}, function(r)
+			{
+				if(r.status == 0 )
+				$("#loading").fadeIn("fast", function () {$("#loading").empty(); $("#loading").html(r.msg);});
+				else if(r.status == 1 )
+				{
+				$("#loading").empty();
+				loadpoll();
+				}
+			},"json");
+		
+	
+	}
+	function addvote(val)
+	{
+		$("#choice").val(val);
+		$("#vote_b").show("fast");
+	}
+	$(document).ready( 
+	function()
+		{
+		loadpoll();
+		
+		}
+	);
+
+
+</script>
+
+
+
+<style type="text/css">
+body { background:#999999; color:#CCCCCC; font-family:tahoma; font-size:12px;}
+#poll_container { width:400px; margin:5px; padding:5px; border:1px solid #0033CC;}
+#poll_title { font-size: 14px; font-weight:bold; border:none;text-align:center;}
+
+.barmax, .bar{ border:1px solid #666666; padding-left:2px; padding-right:2px;}
+.bar {background: #cc4400;}
+.barmax {background: #0033CC;}
+</style>
+</head>
+
+<body>
+	<div id="poll_container">
+    	<div id="loading" style="display:none"></div>
+    </div>
+
+
+</body>
+</html>
