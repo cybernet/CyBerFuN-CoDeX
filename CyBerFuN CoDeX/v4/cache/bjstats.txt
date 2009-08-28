@@ -1,0 +1,76 @@
+<h2><center>Most Games Played</center></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="10"><tr><td align="center">
+<table class="main" border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td class="colhead">Rank</td>
+<td align="left" class="colhead">User</td>
+<td align="right" class="colhead">Wins</td>
+<td align="right" class="colhead">Losses</td>
+<td align="right" class="colhead">Games</td>
+<td align="right" class="colhead">Percentage</td>
+<td align="right" class="colhead">Win/Loss</td>
+</tr>
+<tr><td>1</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=1966>Bea</a></b></td></tr></table></td><td align=right>168</td></td><td align=right>156</td></td><td align=right>324</td></td><td align=right>51.9</td></td><td align=right>1.17 GB</td></tr>
+<tr><td>2</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=4801>DarkOne</a></b></td></tr></table></td><td align=right>119</td></td><td align=right>115</td></td><td align=right>234</td></td><td align=right>50.9</td></td><td align=right>400.00 MB</td></tr>
+<tr><td>3</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=5653>nobby</a></b></td></tr></table></td><td align=right>71</td></td><td align=right>93</td></td><td align=right>164</td></td><td align=right>43.3</td></td><td align=right>-2.15 GB</td></tr>
+<tr><td>4</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=3517>slos40</a></b></td></tr></table></td><td align=right>54</td></td><td align=right>52</td></td><td align=right>106</td></td><td align=right>50.9</td></td><td align=right>200.00 MB</td></tr>
+<tr><td>5</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=4323>mark01</a></b></td></tr></table></td><td align=right>58</td></td><td align=right>45</td></td><td align=right>103</td></td><td align=right>56.3</td></td><td align=right>1.27 GB</td></tr>
+</table>
+</td></tr></table>
+<br /><br /><h2><center>Highest Win Percentage</center></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="10"><tr><td align="center">
+<table class="main" border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td class="colhead">Rank</td>
+<td align="left" class="colhead">User</td>
+<td align="right" class="colhead">Wins</td>
+<td align="right" class="colhead">Losses</td>
+<td align="right" class="colhead">Games</td>
+<td align="right" class="colhead">Percentage</td>
+<td align="right" class="colhead">Win/Loss</td>
+</tr>
+<tr><td>1</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=4323>mark01</a></b></td></tr></table></td><td align=right>58</td></td><td align=right>45</td></td><td align=right>103</td></td><td align=right>56.3</td></td><td align=right>1.27 GB</td></tr>
+<tr><td>2</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=1966>Bea</a></b></td></tr></table></td><td align=right>168</td></td><td align=right>156</td></td><td align=right>324</td></td><td align=right>51.9</td></td><td align=right>1.17 GB</td></tr>
+<tr><td>3</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=3517>slos40</a></b></td></tr></table></td><td align=right>54</td></td><td align=right>52</td></td><td align=right>106</td></td><td align=right>50.9</td></td><td align=right>200.00 MB</td></tr>
+<tr><td>4</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=4801>DarkOne</a></b></td></tr></table></td><td align=right>119</td></td><td align=right>115</td></td><td align=right>234</td></td><td align=right>50.9</td></td><td align=right>400.00 MB</td></tr>
+<tr><td>5</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=5653>nobby</a></b></td></tr></table></td><td align=right>71</td></td><td align=right>93</td></td><td align=right>164</td></td><td align=right>43.3</td></td><td align=right>-2.15 GB</td></tr>
+</table>
+</td></tr></table>
+<br /><br /><h2><center>Most Credit Won</center></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="10"><tr><td align="center">
+<table class="main" border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td class="colhead">Rank</td>
+<td align="left" class="colhead">User</td>
+<td align="right" class="colhead">Wins</td>
+<td align="right" class="colhead">Losses</td>
+<td align="right" class="colhead">Games</td>
+<td align="right" class="colhead">Percentage</td>
+<td align="right" class="colhead">Win/Loss</td>
+</tr>
+<tr><td>1</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=4323>mark01</a></b></td></tr></table></td><td align=right>58</td></td><td align=right>45</td></td><td align=right>103</td></td><td align=right>56.3</td></td><td align=right>1.27 GB</td></tr>
+<tr><td>2</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=1966>Bea</a></b></td></tr></table></td><td align=right>168</td></td><td align=right>156</td></td><td align=right>324</td></td><td align=right>51.9</td></td><td align=right>1.17 GB</td></tr>
+<tr><td>3</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=4801>DarkOne</a></b></td></tr></table></td><td align=right>119</td></td><td align=right>115</td></td><td align=right>234</td></td><td align=right>50.9</td></td><td align=right>400.00 MB</td></tr>
+<tr><td>4</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=3517>slos40</a></b></td></tr></table></td><td align=right>54</td></td><td align=right>52</td></td><td align=right>106</td></td><td align=right>50.9</td></td><td align=right>200.00 MB</td></tr>
+<tr><td>5</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=5653>nobby</a></b></td></tr></table></td><td align=right>71</td></td><td align=right>93</td></td><td align=right>164</td></td><td align=right>43.3</td></td><td align=right>-2.15 GB</td></tr>
+</table>
+</td></tr></table>
+<br /><br /><h2><center>Most Credit Lost</center></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="10"><tr><td align="center">
+<table class="main" border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td class="colhead">Rank</td>
+<td align="left" class="colhead">User</td>
+<td align="right" class="colhead">Wins</td>
+<td align="right" class="colhead">Losses</td>
+<td align="right" class="colhead">Games</td>
+<td align="right" class="colhead">Percentage</td>
+<td align="right" class="colhead">Win/Loss</td>
+</tr>
+<tr><td>1</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=5653>nobby</a></b></td></tr></table></td><td align=right>71</td></td><td align=right>93</td></td><td align=right>164</td></td><td align=right>43.3</td></td><td align=right>-2.15 GB</td></tr>
+<tr><td>2</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=3517>slos40</a></b></td></tr></table></td><td align=right>54</td></td><td align=right>52</td></td><td align=right>106</td></td><td align=right>50.9</td></td><td align=right>200.00 MB</td></tr>
+<tr><td>3</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=4801>DarkOne</a></b></td></tr></table></td><td align=right>119</td></td><td align=right>115</td></td><td align=right>234</td></td><td align=right>50.9</td></td><td align=right>400.00 MB</td></tr>
+<tr><td>4</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=1966>Bea</a></b></td></tr></table></td><td align=right>168</td></td><td align=right>156</td></td><td align=right>324</td></td><td align=right>51.9</td></td><td align=right>1.17 GB</td></tr>
+<tr><td>5</td><td align=left><table border=0 class=main cellspacing=0 cellpadding=0><tr><td class=embedded><b><a href=userdetails.php?id=4323>mark01</a></b></td></tr></table></td><td align=right>58</td></td><td align=right>45</td></td><td align=right>103</td></td><td align=right>56.3</td></td><td align=right>1.27 GB</td></tr>
+</table>
+</td></tr></table>

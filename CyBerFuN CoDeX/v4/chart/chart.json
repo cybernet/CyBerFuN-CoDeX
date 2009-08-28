@@ -1,0 +1,41 @@
+{
+  "elements": [
+    {
+      "type": "line_hollow",
+      "values": [
+        2,
+        7
+      ],
+      "text": "Registration Statistics | Total: 9",
+      "font-size": 12,
+      "halo-size": 1,
+      "width": 2,
+      "colour": "#0099FF",
+      "dot-size": 5
+    }
+  ],
+  "title": {
+    "text": "Statistic Center Results\nDaily Registration Statistics 16 December 2008 to 17 March 2009"
+  },
+  "x_axis": {
+    "colour": "#A2ACBA",
+    "grid-colour": "#ECFFAF",
+    "steps": 2,
+    "labels": {
+      "steps": 2,
+      "rotate": "vertical",
+      "colour": "#000000",
+      "size": 12,
+      "labels": [
+        "March 13th - 2009",
+        "March 12th - 2009"
+      ]
+    }
+  },
+  "y_axis": {
+    "steps": 50,
+    "colour": "#A2ACBA",
+    "min": 0,
+    "max": 12
+  }
+}
