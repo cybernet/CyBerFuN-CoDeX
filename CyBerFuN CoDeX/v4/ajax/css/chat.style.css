@@ -1,0 +1,66 @@
+.loading {
+	left:357px;
+	position:absolute;
+	top:15px;
+	clear:both;
+	z-index:80;
+}
+.close, .move {
+	top:1px;
+	position:absolute;
+	clear:both;
+	display:inline;
+	z-index:80;
+}
+.close {
+	left:380px;
+	cursor:pointer;
+}
+.move {
+	left:367px;
+	cursor:move;
+}
+.room_body {
+	background:#666666;
+	border:1px solid #0066CC;
+	text-align:center;
+	width:400px;
+	padding:4px;
+	margin:4px 4px;
+}
+.room_shout {
+	width:97%;
+	padding:2px;
+	background:#CCCCCC;
+	font-family: "tahoma", "arial", "helvetica", "sans-serif";
+	font-size:10px;
+	color:#666666;
+	height:30px;
+	margin-top:5px;
+	border:1px #0066CC solid;
+}
+.room_msg {
+	background:#CCCCCC;
+	border:1px solid #0066CC;
+	font-family: "tahoma", "arial", "helvetica", "sans-serif";
+	font-size:11px;
+	color:#666666;
+	height:150px;
+	font-weight:normal;
+	width:98%;
+	padding:2px;
+	overflow:auto;
+	text-align:left;
+}
+.alert_box {
+	width:400px;
+	border:2px solid #990000;
+	background:#CC0000;
+	color:#222222;
+	font-weight:bold;
+	padding:3px;
+	text-align:center;
+	margin:2px;
+	position:absolute;
+}
+.small { font-size:9px; font-weight: normal;}
