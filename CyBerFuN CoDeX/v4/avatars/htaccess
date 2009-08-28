@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?yoursite.com(/)?.*$     [NC]
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?second-site.com(/)?.*$     [NC]
+RewriteCond %{HTTP_REFERER} !^http://(www\.)?athirdsite.com(/)?.*$     [NC]
+RewriteRule .*\.(gif|jpg|jpeg|bmp)$ http://yoursite.com/pic/warn.jpg [R,NC]
