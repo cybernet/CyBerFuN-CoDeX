@@ -52,7 +52,7 @@ while ($sarr = mysql_fetch_assoc($sres)) {
     @mysql_free_result($ures);
 }
 @mysql_free_result($sres);
-write_log("Snatched Table Cleaned by " . $CURUSER["username"]);
+write_log("snatched_table_cleaned", "Snatched Table Cleaned by " . $CURUSER["username"]);
 
 print("Memory usage:" . memory_get_usage() . "<br /><br />");
 

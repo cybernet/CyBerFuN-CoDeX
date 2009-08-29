@@ -54,7 +54,7 @@ while ($sarr = mysql_fetch_assoc($sres)) {
     @mysql_free_result($ures);
 }
 @mysql_free_result($sres);
-write_log("Thanks Table Cleaned by " . $CURUSER["username"]);
+write_log("thanks_table_cleaned", "Thanks Table Cleaned by " . $CURUSER["username"]);
 
 print("Memory usage:" . memory_get_usage() . "<br /><br />");
 

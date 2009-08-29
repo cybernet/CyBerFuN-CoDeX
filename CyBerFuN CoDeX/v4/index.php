@@ -443,6 +443,8 @@ if ($CURUSER['bohp'] == "yes") {
 </div>
 <? 
 }
+// show stats only for SysOp
+// www.cyberfun.ro //
 if (get_user_class() > UC_SYSOP) {
 
 ?>

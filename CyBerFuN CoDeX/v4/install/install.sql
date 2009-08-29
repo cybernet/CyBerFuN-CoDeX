@@ -1859,14 +1859,14 @@ CREATE TABLE `shoutbox` (
 -- Table structure for table `sitelog`
 -- 
 
-CREATE TABLE `sitelog` (
+CREATE TABLE IF NOT EXISTS `sitelog` (
   `id` int(10) unsigned NOT NULL auto_increment,
-  `type` enum('torrentupload','torrentedit','torrentdelete','promotion','demotion','addwarn','remwarn','accenabled','accdisabled','accdeleted','slowautoclean','autohitrun','autobackupdb','autooptimizedb','passwordreset','ratioedit','newmember','customsmiles','autoclean','autowarn','autodewarn','autoban','staffaction','shoutcom','userdelete') collate utf8_bin NOT NULL default 'torrentupload',
+  `type` enum('torrentupload','torrentedit','torrentdelete','promotion','demotion','addwarn','remwarn','accenabled','accdisabled','accdeleted','slowautoclean','autohitrun','autobackupdb','autooptimizedb','passwordreset','ratioedit','newmember','customsmiles','autoclean','autowarn','autodewarn','autoban','staffaction','shoutcom','userdelete','cyberfun_clean_comments_from_del_torrents','rating_table_cleaned','thanks_table_cleaned','snatched_table_cleaned') character set utf8 NOT NULL default 'torrentupload',
   `added` datetime default NULL,
   `txt` text collate utf8_bin,
   PRIMARY KEY  (`id`),
   KEY `added` (`added`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- 
 -- Dumping data for table `sitelog`
