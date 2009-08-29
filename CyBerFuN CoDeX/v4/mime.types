@@ -1,0 +1,236 @@
+application/X-FSRecipe           fs 
+application/activexdocument      vbd
+application/astound              asn asz asd
+application/cprplayer            pqi
+application/datawindow 		 psr
+application/dsptype              tsp
+application/exe                  exe
+application/fml                  fml ofml
+application/font-tdpfr           pfr
+application/freeloader           frl
+application/futuresplash         spl
+application/gzip                 gz tgz
+application/hstu                 stk 
+application/ips                  ips
+application/listenup             ptlk 
+application/lit			 lit
+application/mac-binhex40         hqx
+application/mbedlet              mbd
+application/mdb		   	 mdb
+application/mirage               mfp
+application/msi			 msi 
+application/msm                  msm
+application/mspowerpoint         pot pps ppt ppz
+application/msword               doc
+application/n2p                  n2p 
+application/octet-stream         bat BAT bin class dbf lha lzh lzx sjf
+application/octet-stream-bin 	 seq
+application/oda                  oda
+application/olescript            axs
+application/pcphoto              zpa
+application/pdf                  pdf
+application/pls 	 	 pls
+application/postscript           ai eps ps       
+application/presentations        shw
+application/quest                qrt
+application/rtc                  rtc
+application/rtf                  rtf             
+application/smil		 smil smi sml
+application/studiom              smp
+application/tajima               dst
+application/talker               talk
+application/toolbook             tbk
+application/vnd.lotus-1-2-3 	 123
+application/vnd.ms-project	 mpp
+application/vnd.powerbuilder6	 pbd 
+application/vnd.wap.wmlc	 wmlc
+application/vnd.wap.wmlscriptc	 wmlsc
+application/vocaltec-media-desc  vmd
+application/vocaltec-media-file  vmf
+application/vpa			 vpa
+application/wordperfect5.1	 wpd
+application/write                wri
+application/x-DemoShield         wid 
+application/x-InstallFromTheWeb  rrf
+application/x-InstallShield      wis
+application/x-NET-Install        ins
+application/x-Parable-Thing      tmv
+application/x-arj                arj
+application/x-asap               asp
+application/x-authorware-bin     aab
+application/x-authorware-map     aam aas
+application/x-bcpio              bcpio           
+application/x-cdlink             vcd
+application/x-cdr 		 cdr
+application/x-chat               chat
+application/x-cnc                cnc
+application/x-coda               coda page
+application/x-compress           z
+application/x-connector          con
+application/x-cpio               cpio            
+application/x-cprplayer          pqf
+application/x-csh                csh             
+application/x-cu-seeme           cu csm
+application/x-director           dcr dir dxr swa
+application/x-dreamcast-vms	 vms
+application/x-dreamcast-vms-info vmi
+application/x-dvi                dvi             
+application/x-envoy              evy    
+application/x-expandedbook       ebk
+application/x-gtar               gtar            
+application/x-hdf                hdf             
+application/x-hsp-erf            erf
+application/x-httpd-imap         map
+application/x-httpd-php          php php4
+application/x-httpd-php3         php3
+application/x-ica                ica 
+application/x-icq                uin
+application/x-ipix               ipx
+application/x-ipscript           ips
+application/x-javascript         js
+application/x-latex              latex           
+application/x-macbinary          bin
+application/x-mif                mif
+application/x-mpire              mpl mpire
+application/x-ms-wmv 		 wmv 
+application/x-msaddr             adr
+application/x-mswallet           wlt
+application/x-netcdf             nc cdf          
+application/x-netfpx             npx 
+application/x-nokia-9000-communicator-add-on-software aos
+application/x-nschat             nsc
+application/x-pgp-plugin         pgp
+application/x-quicktimeplayer	 qtl
+application/x-sh                 sh              
+application/x-shar               shar            
+application/x-shockwave-flash    swf 
+application/x-sprite             spr sprite
+application/x-stuffit            sit
+application/x-supercard          sca
+application/x-sv4cpio            sv4cpio         
+application/x-sv4crc             sv4crc          
+application/x-tar                tar             
+application/x-tcl                tcl             
+application/x-tex                tex             
+application/x-texinfo            texinfo texi   
+application/x-tlk                tlk 
+application/x-troff              t tr roff       
+application/x-troff-man          man             
+application/x-troff-me           me              
+application/x-troff-ms           ms              
+application/x-up-alert           alt
+application/x-up-cacheop         che
+application/x-ustar              ustar           
+application/x-wais-source        src             
+application/x-wordpro 		 lwp
+application/x-x509-ca-cert	 cacert
+application/x-x509-email-cert	 ecert email
+application/x-x509-server-cert	 scert servercert
+application/x-x509-user-cert   	 ucert usercert
+application/x-zip-compressed 	 zip
+application/xls                  xls
+application/xlt                  xlt
+application/zip                  zip             
+audio/basic                      au snd          
+audio/echospeech                 es
+audio/gsm                        gsm gsd
+audio/rmf                        rmf
+audio/tsplayer                   tsi    
+audio/voxware                    vox 
+audio/wtx                        wtx
+audio/x-aiff                     aif aiff aifc
+audio/x-dspeech                  cht dus
+audio/x-midi                     mid midi
+audio/x-mpeg                     mp2 mp3
+audio/x-mpegurl                  m3u
+audio/x-ms-wma			 wma
+audio/x-pn-realaudio             ram ra rm
+audio/x-pn-realaudio-plugin      rpm
+audio/x-qt-stream                stream 
+audio/x-rmf                      rmf
+audio/x-twinvq                   vqf     vql
+audio/x-twinvq-plugin            vqe
+audio/x-wav                      wav             
+audio/x-wtx                      wtx
+chemical/x-mdl-molfile           mol
+chemical/x-pdb                   pdb
+drawing/x-dwf                    dwf
+i-world/i-vrml                   ivr
+image/cis-cod                    cod
+image/cpi                        cpi
+image/fif                        fif
+image/gif                        gif             
+image/ief                        ief             
+image/jpeg                       jpeg jpg jpe
+image/png			 png
+image/rip                        rip
+image/svh                        svh
+image/tiff                       tiff tif        
+image/vasa                       mcf    
+image/vnd                        svf dwg dxf
+image/vnd.wap.wbmp		 wbmp
+image/vnd.xiff                   xif
+image/wavelet                    wi
+image/x-clp                      clp CLP
+image/x-cmu-raster               ras
+image/x-cmx			 cmx
+image/x-emf                      emf EMF
+image/x-etf                      etf
+image/x-fpx                      fpx
+image/x-freehand                 fh5 fh4 fhc    
+image/x-halo-cut                 cut
+image/x-jps                      jps
+image/x-mgx-dsf                  dsf
+image/x-ms-bmp                   bmp
+image/x-portable-anymap          pnm             
+image/x-portable-bitmap          pbm             
+image/x-portable-graymap         pgm             
+image/x-portable-pixmap          ppm             
+image/x-quicktime 	         qti
+image/x-rgb                      rgb
+image/x-wmf                      wmf WMF
+image/x-xbitmap                  xbm             
+image/x-xpixmap                  xpm             
+image/x-xwindowdump              xwd             
+multipart/mixed                  dig
+multipart/x-mixed-replace        push
+plugin/wanimate                  wan waf
+text/ccs                         ccs
+text/calendar                    vcs
+text/css 			 css	
+text/dss			 dss
+text/html                        htm html
+text/lsp			 lsp
+text/parsnegar-document          pgr
+text/plain                       htc
+text/plain                       txt
+text/richtext                    rtx             
+text/tab-separated-values        tsv             
+text/vnd.wap.wml		 wml
+text/vnd.wap.wmlscript	 	 wmls
+text/x-hdml                      hdml
+text/x-setext                    etx             
+text/x-speech                    talk spc
+text/xml 			 xml
+text/xml			 xsl
+urdu/urdu98                      u98
+video/animaflex                  afl
+video/mpeg                       mpeg mpg mpe    
+video/quicktime                  qt mov          
+video/vnd.vivo                   viv vivo    
+video/x-ms-asf                   asf asx
+video/x-msvideo                  avi             
+video/x-sgi-movie                movie           
+video/x-videogram                vgm vgx xdr
+video/x-videogram-plugin         vgp
+workbook/formulaone              vts vtts
+x-world/x-3dmf                   3dmf 3dm qd3d qd3    
+x-world/x-svr                    svr
+x-world/x-vrml                   wrl wrz
+x-world/x-vrt                    vrt
+audio/x-ms-wax			 wax
+video/x-ms-wvx			 wvx
+video/x-ms-wm			 wm
+video/x-ms-wmx			 wmx
+application/x-ms-wmz		 wmz
+application/x-ms-wmd		 wmd

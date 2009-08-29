@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<rss version="0.91">
+<channel>
+<title>TorrentBits</title>
+<description>0-week torrents</description>
+<link>http://installerv1.no-ip.org/</link>
+<item>
+<title>Hoobastank-So Close So Far (Live Leno 27-01-09)-HDTV-x264-2009-SRP.torrent.torrent (Appz/misc)</title>
+<description>test</description>
+<link>http://installerv1.no-ip.org/download.php/11/Hoobastank-So_Close_So_Far_(Live_Leno_27-01-09)-HDTV-x264-2009-SRP.torrent.torrent</link>
+</item>
+<item>
+<title>Admincp Installer V4.rar.torrent (Appz/misc)</title>
+<description>/// http://www.tbdev.net.
+/// All Credit goes to the code creators, the code advisors , the advanced members especially to any author for the mods i selected for this . 
+/// The original coders of torrentbits and especially to CoLdFuSiOn for carrying on the legacy.
+/// All other mods and snippets for this version from CoLdFuSiOn, Retro, ezero, Alex2005, system, cddvdheaven, sir_Snugglebunny, laffin, rightthere, thebrass, Wilba , bodhisattva, Traffic , BigBoss , dokty, djlee, neptune, putyn, stonebreath, pdq ... you inspired me on this Project massive thanks to you for all the mods of yours i used, scars , Raw , Cue , Lamers , thehippy , soft, jaits  Theres to many to mention here but the upmost respect and credit to you all :)
+/// Sir_Snugglebunny and Pdq your modifications rock:).
+/// Retro for his awesome code and security updates.
+/// TorrentStrike and Tornado2003 for the torrentstrike theme-engine - Dehas and all the orignal theme creators - ikiller for the default skin and Manboo Aka thehippy for countless html and css fixes.
+/// The original coder of the installer script.
+/// Credits.php will be released in final version crediting every single mod/author in this release.
+/// Majority of these scripts used have been modified by myself some insignificant some quite extensive. !!!
+/// Thanks to Rich - Mistero - BunkerBengt - Deej - hatchet many others who contibuted and helped me on the Installer thread in the early Beta testing phases.
+/// Full credit to putyn for optimizations .. HTML Validation and improvements in key areas on the installer code - dotblue ... what can i say i love that theme - Your work has been first class.
+/// 
+/// 
+Set Up Instructions :
+///
+///
+////////on-screen steps/////////////
+Quick notes for installing this Pre-Coded Tbdev Release By Bigjoos
+Edit all index.html files and set your url in the .htaccess files in /avatar - /bitbucket to disable hot-linking
+No CHMOD required for Windows Installs
+On a linux install Set CHMOD777 for folders and files in the following --&gt;... /avatar /bitbucket /cache /cache/index cache/browse and any other cache file that requires it - note the the top ten cache files are written to the include folder.. - /dox /forumattaches /torrents /logs /dir_list /settings and the two nested files  ... Also include/cache and the three files it contains.. imdb/cache and imdb/images.
+The /include/secrets.php must be writable (CHMOD 666) for linux installs
+Do not change the Default username -&gt; Admin login on install - its part of a staff protection function - before promoting any staff on site ensure they are added using the onsite staff manager first.
+Strongly Advised to run this code on a server only !!
+//////////////////////////////////////////////////////////////////////////////
+1. Go to http://localhost/install/install.php or http://yourdomain.org/install/install.php
+2. Follow on screen steps
+3. Once installed make sure to chmod or delete the install directory
+4. Customize to your own taste !!
+//////////////////////////////Tbdev Pre-Coded Auto Installer By Bigjoos///////////////////</description>
+<link>http://installerv1.no-ip.org/download.php/10/Admincp_Installer_V4.rar.torrent</link>
+</item>
+<item>
+<title>Installer Cat Icons.rar.torrent (Appz/misc)</title>
+<description>test</description>
+<link>http://installerv1.no-ip.org/download.php/9/Installer_Cat_Icons.rar.torrent</link>
+</item>
+<item>
+<title>Amazing.Grace.2006.NORDIC.PAL.DVDR-EFTERDYNINGAR (Movies/DVD-R)</title>
+<description>E F T E R D Y N I N G A R - P R E S E N T S
+Amazing Grace (2006)
+
+RELEASE DATE: 05/04/2009 VIDEO: 6pass 4885kbps
+STOREDATE: 08/04/2009 AUDIO: ENGLISH DD5.1
+NO.OF ARCHIVES: 85 x 50MB SUBS: DK,FI,NO,SE
+SOURCE: PAL EXTRAS: None
+
+MOVIE INFO
+
+The idealist William Wilberforce maneuvers his way through Parliament
+in 19th century England, endeavoring to end the British transatlantic
+slave trade
+
+http://www.imdb.com/title/tt0454776/</description>
+<link>http://installerv1.no-ip.org/download.php/8/Amazing.Grace.2006.NORDIC.PAL.DVDR-EFTERDYNINGAR.torrent</link>
+</item>
+<item>
+<title>brightswitch.torrent (Appz/misc)</title>
+<description>TEST</description>
+<link>http://installerv1.no-ip.org/download.php/7/brightswitch.torrent</link>
+</item>
+<item>
+<title>Ong.Bak.2.2008.CUSTOM.SWESUB.DVDR-iNjECT (Movies/DVD-R)</title>
+<description>iNjECT PRESENTS
+
+Ong.Bak.2.2008.CUSTOM.SWESUB.DVDR-iNjECT
+
+RELEASE iNFO
+
+RELEASE DATE: 2009-03-30
+RATiNG: 7.1/10 563 votes
+GENRE: Action
+YEAR: 2008
+PLAYTiME: 91 minutes
+SUBTiTLES: Custom Swedish, English
+VIDEO: Untouched
+AUDiO: 5.1 Thai
+MENU: Customized
+EXTRAS: All gone!
+ViDEO: PAL
+iMDB: http://www.imdb.com/title/tt0785035/
+
+BiG HUGS FOR
+
+THE DVD SOURCE: Ong-Bak.2.2008.PAL.DVDR-d0h
+THE SWEDiSH SUBTiTLE: SSG - SweSUB Group FRiEND
+
+A lot of thanks for your fine work
+
+NOTES
+
+Enjoy this one
+
+GROUPNOTES
+
+LOOKING FOR: Nothing
+CONTACT: If you dont find us we dont need you
+
+GREETiNGS
+
+WhoKnow
+All the hard working release groups out there</description>
+<link>http://installerv1.no-ip.org/download.php/6/Ong.Bak.2.2008.CUSTOM.SWESUB.DVDR-iNjECT.torrent</link>
+</item>
+<item>
+<title>Punisher.War.Zone.2008.PROPER.CUSTOM.SWESUB.DVDR-iNCLUSION (Movies/DVD-R)</title>
+<description>_ _ _ ___ _ _ _ ___ _ ___ _ _
+&lt;_&gt;| \ || _&gt;| | | | |/ __&gt;| || . || \ |
+| || || &lt;__| |_ | ' |\__ \| || | || |
+|_||_\_|`___/|___|`___'&lt;___/|_|`___'|_\_|
+
+iNCLUSION 2008
+
+|: P R E S E N T S: | |
+Imagetype.....Img 4.57 GB
+
+Imagename.....inc-punisher.proper.dvdr.img
+
+Archiver......RARLab 94/50 MB
+
+Archivename...inc-punisher.proper.dvdr.rar
+Verification..SFV
+
+Genre .......Action | Crime | Drama | Thriller
+
+IMDb..........6.4/10 9.715 Votes
+
+Runtime.......USA | Canada | Germany 103 Min
+
+R E L E A S E
+
+Punisher.War.Zone.2008.PROPER.CUSTOM.SWESUB.DVDR-iNCLUSION
+
+S O U R C E
+
+Punisher.War.Zone.2008.PROPER.NTSC.DVDR-VoMiT
+
+R E L E A S E I N F O R M A T I O N
+
+Proper beacuse nuked source
+
+Punisher.War.Zone.2008.CUSTOM.SWESUB.DVDR-iNjECT
+
+P L O T S U M M A R Y
+
+http://www.imdb.com/title/tt0450314/
+| |: Read The Link Above: R E A D T H I S
+
+S T A N D A R D: A S P E C T D V D
+R A T I O: E X T R A: NTSC [ ]: 2.35:1 [ ]: | PAL
+
+1.78:1
+1.44:1
+
+V I D E O: Q U A L I T Y: A U D I O: Untouched [ ]
+
+6.1 [ ]
+
+Reencoded [ ]
+
+5.0 [ ]
+
+xxxx/6-pass CCE @ 2.1 [ ]
+
+2.0 [ ]
+
+| M E N U: Untouched [ ] [ ] [ ]
+
+' Stripped / None
+
+DTS
+
+R E A D T H I S
+
+S U B T I L E: W A N T E D: Swedish [ ] [ ] [ ]
+
+Finnish [ ]
+
+English [ ]
+
+French [ ] [ ]
+
+Other / More
+
+T E S T E D O N: G R E E T S: Yamaha DVD-S557T
+
+KiSS DP-558
+
+Centrum Gemini 340
+
+| X-BOX
+
+: Other - [ ]: Not At The Moment
+
+' `
+
+N O T E: Thanks To SSG - SweSUB Group
+
+TAZ - FRiEND - Taffi www.SweSUB.nu
+
+And For Source VoMiT
+
+Generated By iNC.NfoGen 2</description>
+<link>http://installerv1.no-ip.org/download.php/4/Punisher.War.Zone.2008.PROPER.CUSTOM.SWESUB.DVDR-iNCLUSION.torrent</link>
+</item>
+<item>
+<title>VA-The Watchmen (OST)-2009-MTD (Music)</title>
+<description>VA - The Watchmen (OST)
+
+Artist: VA
+Title: The Watchmen (OST)
+Label: Warner / Reprise
+Store Date: 03-03-2009
+Genre: Soundtrack
+Encoder: Lame 3.97 / -V2 --vbr-new
+Size: 76,1 MB
+
+Track Listing:
+
+01 - My Chemical Romance - Desolation Row 03:01
+02 - Nat King Cole - Unforgettable 03:28
+03 - Bob Dylan - The Times They Are A-Changin' 03:14
+04 - Simon &amp; Garfunkel - The Sound Of Silence 03:07
+05 - Janis Joplin - Me And Bobby McGee 04:32
+06 - K.C. &amp; The Sunshine Band - I'm Your Boogie Man 04:04
+07 - Billie Holiday - You're My Thrill 03:25
+08 - The Philip Glass Ensemble - Pruit Igoe &amp; 08:38
+Prophecies
+09 - Leonard Cohen - Hallelujah 04:38
+10 - Jimi Hendrix - All Along The Watchtower 04:02
+11 - Budapest Symphony Orchestra - Ride Of The 05:22
+Valkyries
+12 - Nina Simone - Pirate Jenny 06:39
+54:10 min
+Release Notes:
+
+Watchmen's Music From The Motion Picture is as wildly adventurous
+as the film-from Modern Rock hero My Chemical Romance covering Bob
+Dylan's 'Desolation Row' and 1960s classics from Simon &amp;
+Garfunkel, Bob Dylan, Jimi Hendrix and Janis Joplin to
+unforgettable gems from Nat King Cole, Billie Holiday and Nina
+Simone. Watchmen may be the first soundtrack ever to include both
+Leonard Cohen and KC &amp; The Sunshine Band
+
+Enjoy</description>
+<link>http://installerv1.no-ip.org/download.php/2/VA-The_Watchmen_(OST)-2009-MTD.torrent</link>
+</item>
+<item>
+<title>Coldplay-Life In Technicolor II (Live At TOTP 31-12-2008)-x264-2008-TDF.torrent (Music)</title>
+<description>Test :)</description>
+<link>http://installerv1.no-ip.org/download.php/1/Coldplay-Life_In_Technicolor_II_(Live_At_TOTP_31-12-2008)-x264-2008-TDF.torrent</link>
+</item>
+</channel>
+</rss>
