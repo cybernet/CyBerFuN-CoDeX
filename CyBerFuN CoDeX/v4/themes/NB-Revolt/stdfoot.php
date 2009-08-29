@@ -4,6 +4,7 @@
 if(!defined('PUBLIC_ACCESS')) die('Fuck off - You cant access scripts directly fool !');
 echo "<br />Theme By <a href=http://www.nikkbu.com target=_blank><b>Nikkbu</b></a> Ported for the Installer by <b>Hatchet</b>";
 echo "<br />Site Powered by <a href=http://tbdev.net target=_blank>TBDEV.NET</a>";
+echo "<br />Site Powered by <a href=http://cyberfun.ro target=_blank>CyBerFuN Tracker</a>";
 ?>
 </div>
 <br />
@@ -21,29 +22,6 @@ $seconds = substr($seconds, 0, 8);
 <div align="center">
 <br />
 <span>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Arabic">Arabic</a>	
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Danish">Danish</a>
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=English">English</a>
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=French">Français</a>
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=German">Deutsch</a>
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Italian">Italiano</a>		    <b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Hungarian">Hungarian</a>		    <b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Hebrew">Hebrew</a>		    <b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Latvian">Latvian</a>		    <b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Portuguese">Português</a>
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Romanian">Romanian</a>
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Spanish">Español</a>
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Swedish">Swedish</a>
-		<b>·</b>
-		<a href="<?php echo $config['site']['DEFAULTBASEURL'];?>?lang=Finnish">Finnish</a>
 			</span>
 	</p> 
 <p align="center" class="generated"><b>Page generated in <?php echo number_format(array_sum(explode(' ', microtime())) - $GLOBALS['stime'], 5)?> seconds using <?php echo $queries?> queries,<?php echo $percentphp?> &#37; php &#38; <?php echo $percentsql?> &#37; sql</b></p></div>

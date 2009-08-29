@@ -49,7 +49,7 @@ stdhead("Ratio Edit");
 <tr><td class=rowhead>User name</td><td><input type=text name=username size=40></td></tr>
 <tr><td class=rowhead>Amount Uploaded</td><td><input type=uploaded name=uploaded size=40></td></tr>
 <tr><td class=rowhead>Amount Download</td><td><input type=downloaded name=downloaded size=40></td></tr>
-<tr><td class=rowhead>Use This tool for converting</td><td><a href="<?=$BASEURL?>/calculator.php">Calculator</a></td></tr>
+<tr><td class=rowhead>Use This tool for converting</td><td><a href="<?=$BASEURL?>/calculator.php" target=_blank>Calculator</a></td></tr>
 <tr><td colspan=2 align=center><input type=submit value="Okay" class=btn></td></tr>
 </table>
 </form>
