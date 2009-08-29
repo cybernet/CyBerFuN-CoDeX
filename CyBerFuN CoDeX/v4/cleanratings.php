@@ -1,4 +1,8 @@
 <?php
+// CyBerFuN.Ro
+// By CyBerNe7
+//            //
+// www.cyberfun.ro
 require_once("include/bittorrent.php");
 require_once ("include/user_functions.php");
 require_once ("include/bbcode_functions.php");
@@ -54,7 +58,7 @@ while ($sarr = mysql_fetch_assoc($sres)) {
     @mysql_free_result($ures);
 }
 @mysql_free_result($sres);
-write_log("Rating Table Cleaned by " . $CURUSER["username"]);
+write_log("rating_table_cleaned", "Rating Table Cleaned by " . $CURUSER["username"]);
 
 print("Memory usage:" . memory_get_usage() . "<br /><br />");
 

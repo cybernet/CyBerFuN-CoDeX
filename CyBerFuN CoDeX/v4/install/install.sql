@@ -1861,7 +1861,7 @@ CREATE TABLE `shoutbox` (
 
 CREATE TABLE IF NOT EXISTS `sitelog` (
   `id` int(10) unsigned NOT NULL auto_increment,
-  `type` enum('torrentupload','torrentedit','torrentdelete','promotion','demotion','addwarn','remwarn','accenabled','accdisabled','accdeleted','slowautoclean','autohitrun','autobackupdb','autooptimizedb','passwordreset','ratioedit','newmember','customsmiles','autoclean','autowarn','autodewarn','autoban','staffaction','shoutcom','userdelete','cyberfun_clean_comments_from_del_torrents','rating_table_cleaned','thanks_table_cleaned','snatched_table_cleaned') character set utf8 NOT NULL default 'torrentupload',
+  `type` enum('torrentupload','torrentedit','torrentdelete','promotion','demotion','addwarn','remwarn','accenabled','accdisabled','accdeleted','slowautoclean','autohitrun','autobackupdb','autooptimizedb','passwordreset','ratioedit','newmember','customsmiles','autoclean','autowarn','autodewarn','autoban','staffaction','shoutcom','userdelete','cyberfun_clean_comments_from_deleted_torrents','rating_table_cleaned','thanks_table_cleaned','snatched_table_cleaned') character set utf8 NOT NULL default 'torrentupload',
   `added` datetime default NULL,
   `txt` text collate utf8_bin,
   PRIMARY KEY  (`id`),
@@ -1958,85 +1958,85 @@ CREATE TABLE `staffpanel` (
 -- Dumping data for table `staffpanel`
 -- 
 
-INSERT INTO `staffpanel` VALUES (1, 'Ratio Edit', 'ratioedit', 'Adjust Members Ratio Here', 6, 1, 1217836568);
-INSERT INTO `staffpanel` VALUES (2, 'Optimise Database', 'mysql_overview', 'View And Optimise The Database From The Tracker', 7, 1, 1217836655);
-INSERT INTO `staffpanel` VALUES (3, 'Uploader Applications', 'uploadapps', 'View All New Uploader Applications', 6, 1, 1217836885);
-INSERT INTO `staffpanel` VALUES (4, 'Manage Chmod', 'chmod', 'Manage Ftp Directory Chmod Permissions', 7, 1, 1217836942);
-INSERT INTO `staffpanel` VALUES (5, 'Manual Clean up', 'docleanup', 'Run Site Clean Up ', 7, 1, 1217837040);
-INSERT INTO `staffpanel` VALUES (6, 'Mass Bonus', 'massbonus', 'Award All Members 500 Karma Points', 6, 1, 1217837358);
-INSERT INTO `staffpanel` VALUES (7, 'Cache Stylesheets', 'cachestylesheets', 'Cache StyleSheets When Adding New Entrys', 6, 1, 1217837552);
-INSERT INTO `staffpanel` VALUES (8, 'Ip Bans', 'bans', 'Ip Ban Bad Users', 6, 1, 1217838226);
-INSERT INTO `staffpanel` VALUES (9, 'Donations', 'donations', 'View All Site Donators And Donations Here', 6, 1, 1217838383);
-INSERT INTO `staffpanel` VALUES (10, 'Site Check', 'sitecheck', 'Coders Site Checker', 7, 1, 1217838638);
-INSERT INTO `staffpanel` VALUES (11, 'Hack Log', 'hacklog', 'Monitor Possible Xss Hack Attempts', 6, 1, 1217838737);
-INSERT INTO `staffpanel` VALUES (12, 'Client Viewer', 'detectclients', 'View Clients Peer Id For Banning Clients', 6, 1, 1217838860);
-INSERT INTO `staffpanel` VALUES (13, 'Db Admin', 'msgspy', 'Delete And Manage Spam', 6, 1, 1217839090);
-INSERT INTO `staffpanel` VALUES (15, 'Slots Manager', 'slotmanage', 'Manage Members Freeslots', 6, 1, 1217839273);
-INSERT INTO `staffpanel` VALUES (16, 'Delete User', 'delacctadmin', 'Delete Members Accounts', 5, 1, 1217839394);
-INSERT INTO `staffpanel` VALUES (17, 'Check Torrent Comments', 'torrentcomments', 'Check Comments For Karma Whores', 5, 1, 1217839483);
-INSERT INTO `staffpanel` VALUES (18, 'Group message', 'grouppm', 'Group select All Members - test', 5, 1, 1217840638);
-INSERT INTO `staffpanel` VALUES (19, 'View Reports', 'reports', 'View All Site Reports', 5, 1, 1217840706);
-INSERT INTO `staffpanel` VALUES (20, 'Flush Log', 'flush_log', 'View All Members Flushes', 5, 1, 1217841092);
-INSERT INTO `staffpanel` VALUES (21, 'Announcements', 'usersearch', 'Create New Announcement', 5, 1, 1217843007);
-INSERT INTO `staffpanel` VALUES (22, 'Banned Clients', 'client_clearban', 'View Banned And Ban Clients', 5, 1, 1217843161);
-INSERT INTO `staffpanel` VALUES (23, 'Invite Manager', 'inviteadd', 'Manage Members Invites', 5, 1, 1217843289);
-INSERT INTO `staffpanel` VALUES (24, 'Reset ShoutBox', 'resetshoutbox', 'Clear Old Shout Box History', 5, 1, 1217853919);
-INSERT INTO `staffpanel` VALUES (25, 'Edit Faq', 'faqadmin', 'Edit Site Faq Categories', 5, 1, 1217854009);
-INSERT INTO `staffpanel` VALUES (27, 'Bonus Manager', 'bonusmanage', 'Manage Site Bonus Options', 5, 1, 1217854158);
-INSERT INTO `staffpanel` VALUES (28, 'Add User', 'adduser', 'Manually Create A New Account', 5, 1, 1217854252);
-INSERT INTO `staffpanel` VALUES (29, 'Advanced Account Manager', 'acpmanage', 'Manage Bans - Disabled - Pending Users', 5, 1, 1217854481);
-INSERT INTO `staffpanel` VALUES (30, 'Reset Banned', 'maxlogin', 'Reset Banned Failed Login Attempts', 5, 1, 1217854628);
-INSERT INTO `staffpanel` VALUES (31, 'Edit Rules', 'rules_admin', 'Edit Site Rules', 5, 1, 1217856210);
-INSERT INTO `staffpanel` VALUES (33, 'Edit Links', 'links_admin', 'Edit Site Links', 5, 1, 1217856548);
-INSERT INTO `staffpanel` VALUES (34, 'Warned User''s', 'warned', 'Manage Warned Users', 4, 1, 1217861230);
-INSERT INTO `staffpanel` VALUES (35, 'Rip Nfo', 'nforipper', 'Rip Ascii From Nfo''s', 4, 1, 1217861313);
-INSERT INTO `staffpanel` VALUES (36, 'Invited Users', 'invitedby', 'Show All Invited Users', 4, 1, 1217861373);
-INSERT INTO `staffpanel` VALUES (37, 'Uploader Activity', 'stats', 'View Uploader Activity And Categorie Activity', 4, 1, 1217861859);
-INSERT INTO `staffpanel` VALUES (38, 'Category Manager', 'categorie', 'Manage Site Categories', 4, 1, 1217861924);
-INSERT INTO `staffpanel` VALUES (39, 'Name Changer', 'namechanger', 'Change Members Nicks', 4, 1, 1217862003);
-INSERT INTO `staffpanel` VALUES (40, 'Site Log', 'log', 'View All Site log Entrys', 4, 1, 1217862053);
-INSERT INTO `staffpanel` VALUES (41, 'User List', 'users', 'Full Site User List', 4, 1, 1217862162);
-INSERT INTO `staffpanel` VALUES (42, 'Forum Manager', 'forummanage', 'Manage And Edit Forums', 6, 1, 1217862210);
-INSERT INTO `staffpanel` VALUES (43, 'Inactive Users', 'inactive', 'Show All Inactive Members - Notify By Email', 4, 1, 1217862406);
-INSERT INTO `staffpanel` VALUES (44, 'Reset Password', 'reset', 'Reset Forgotten Passwords', 4, 1, 1217862448);
-INSERT INTO `staffpanel` VALUES (45, 'Snatched Torrents', 'snatched_torrents', 'View All Site Snatches', 4, 1, 1217862509);
-INSERT INTO `staffpanel` VALUES (46, 'Duplicate Ip''s', 'ipcheck', 'Check Site For Duplicate Ip''s', 4, 1, 1217862581);
-INSERT INTO `staffpanel` VALUES (47, 'Not Connectable', 'findnotconnectable', 'View All Non-Connectable Members', 4, 1, 1217862663);
-INSERT INTO `staffpanel` VALUES (48, 'Site Peers', 'viewpeers', 'View All Site Peers', 4, 1, 1217862722);
-INSERT INTO `staffpanel` VALUES (50, 'Advanced User Search', 'usersearch1', 'Carry Out Advanced User Searches', 4, 1, 1218321784);
-INSERT INTO `staffpanel` VALUES (51, 'HtAccessor', 'htaccesser', 'Make .Htaccess files', 7, 1, 1218993346);
-INSERT INTO `staffpanel` VALUES (53, 'Check Invites', 'invitesinplay', 'Keep Tabs on invite''s ', 6, 1, 1219524702);
-INSERT INTO `staffpanel` VALUES (84, 'View Activity', 'activity', 'View activity chart for all members', 4, 1, 1237419862);
-INSERT INTO `staffpanel` VALUES (56, 'Cache Countries', 'cachecountries', 'Cache Countries When Adding New Entrys', 6, 1, 1219664241);
-INSERT INTO `staffpanel` VALUES (57, 'Cache Categories', 'cachecategories', 'Cache Catigories When Adding New Entry', 6, 1, 1219664338);
-INSERT INTO `staffpanel` VALUES (58, 'View Shout History', 'shistory', 'Shout History Check', 6, 1, 1220057674);
-INSERT INTO `staffpanel` VALUES (59, 'Php File Edit Log', 'editlog', 'Coders Php File Edit Log', 7, 1, 1220104851);
-INSERT INTO `staffpanel` VALUES (61, 'Users Possibilities', 'userspos', 'View User Settings', 4, 1, 1220640589);
-INSERT INTO `staffpanel` VALUES (62, 'PhpInfo', 'system_view', 'PhpInfo - Check Filepaths And Configs', 7, 1, 1220781999);
-INSERT INTO `staffpanel` VALUES (63, 'Byte Calculator', 'calculator', 'Convert gigbytes to bytes ect for ratio adjustments', 4, 1, 1221381023);
-INSERT INTO `staffpanel` VALUES (65, 'Reveal Ip Location', 'iptocountry', 'Show Geo Location On Any Ip', 5, 1, 1221406559);
-INSERT INTO `staffpanel` VALUES (66, 'Ban Spoof Emails', 'bannedemails', 'Ban Fake Email Address From Being Used On Sign Up', 5, 1, 1221937606);
-INSERT INTO `staffpanel` VALUES (67, 'Mass Freeleech', 'massfree', 'Not All FreeDownload - Sets Individual Torrent''s To  Countstats On Or Off', 4, 1, 1222420548);
-INSERT INTO `staffpanel` VALUES (70, 'Staff Actions Log', 'sysoplog', 'Staff Functions Log', 6, 1, 1224993991);
-INSERT INTO `staffpanel` VALUES (71, 'Passkey Checker', 'passkeyerr', 'View Possible passkey cheaters', 6, 1, 1228089465);
-INSERT INTO `staffpanel` VALUES (72, 'Manage Onsite Staff', 'maxcoder', 'Add new staff members here - Warning Be Careful When Using This !', 7, 1, 1231104615);
-INSERT INTO `staffpanel` VALUES (73, 'Ratio Cheaters', 'cheaters', 'Check Abnormal Upload Speeds', 5, 1, 1231966160);
-INSERT INTO `staffpanel` VALUES (74, 'Create A Countdown Event', 'countdown', 'Countdown Timer Control', 6, 1, 1231966233);
-INSERT INTO `staffpanel` VALUES (76, 'Promotions', 'promo', 'Create A Bonus Promtion Link', 4, 1, 1235842359);
-INSERT INTO `staffpanel` VALUES (77, 'Clear SnatchList', 'cleansnatch', 'Clear old snatchlist data', 6, 1, 1235842471);
-INSERT INTO `staffpanel` VALUES (78, 'Staff News', 'snews', 'News system for staff only', 4, 1, 1235843654);
-INSERT INTO `staffpanel` VALUES (79, 'Clean Comments', 'cleancomm', 'Clean old comments where torrent has been deleted', 6, 1, 1235941157);
-INSERT INTO `staffpanel` VALUES (80, 'Clean Old Thank You''s', 'cleanthanks', 'Remove Thank You''s where torrent has been deleted', 6, 1, 1235941233);
-INSERT INTO `staffpanel` VALUES (81, 'Ip Who Is', 'whois', 'Full ip whois check', 4, 1, 1236022748);
-INSERT INTO `staffpanel` VALUES (82, 'Clean Old Ratings', 'cleanratings', 'Remove old ratings where torrents have been deleted', 6, 1, 1236083498);
-INSERT INTO `staffpanel` VALUES (83, 'Site Admin Cp', 'core', 'Configure Tracker', 6, 1, 1238444907);
-INSERT INTO `staffpanel` VALUES (85, 'Manage Sub Forums', 'msubforums', 'Manage And Edit Sub  Forums', 7, 1, 1239624404);
-INSERT INTO `staffpanel` VALUES (86, 'Reset  Ratio', 'datareset', 'Reset bad or nuked torrents ratio here', 5, 1, 1241353996);
-INSERT INTO `staffpanel` VALUES (87, 'View Seeders', 'seeders', 'View top site seeders here - sortable.', 4, 1, 1241419341);
-INSERT INTO `staffpanel` VALUES (88, 'Edit Php Files', 'editfiles', 'Edit ftp php files from tracker - may require chmod', 7, 1, 1244402416);
-INSERT INTO `staffpanel` VALUES (89, 'Cache Categorie Icons', 'cachecategorieicons', 'Cache Categorie Icons When Adding New Entrys', 6, 1, 1248095454);
-INSERT INTO `staffpanel` VALUES (90, 'Reputation system admin', 'reputation_ad', 'Manage Reputation Settings', 6, 1, 1248181330);
-INSERT INTO `staffpanel` VALUES (91, 'Reputation Settings', 'reputation_settings', 'Manage Site Reputation Settings', 6, 1, 1248267385);
+INSERT INTO `staffpanel` (`id`, `page_name`, `file_name`, `description`, `av_class`, `added_by`, `added`) VALUES
+(1, 'Ratio Edit', 'ratioedit', 'Adjust Members Ratio Here', 6, 1, 1217836568),
+(2, 'Optimise Database', 'mysql_overview', 'View And Optimise The Database From The Tracker', 7, 1, 1217836655),
+(3, 'Uploader Applications', 'uploadapps', 'View All New Uploader Applications', 6, 1, 1217836885),
+(4, 'Manage Chmod', 'chmod', 'Manage Ftp Directory Chmod Permissions', 7, 1, 1217836942),
+(5, 'Manual Clean up', 'docleanup', 'Run Site Clean Up ', 7, 1, 1217837040),
+(6, 'Mass Bonus', 'massbonus', 'Award All Members 500 Karma Points', 6, 1, 1217837358),
+(7, 'Cache Stylesheets', 'cachestylesheets', 'Cache StyleSheets When Adding New Entrys', 6, 1, 1217837552),
+(8, 'Ip Bans', 'bans', 'Ip Ban Bad Users', 6, 1, 1217838226),
+(9, 'Donations', 'donations', 'View All Site Donators And Donations Here', 6, 1, 1217838383),
+(10, 'Site Check', 'sitecheck', 'Coders Site Checker', 7, 1, 1217838638),
+(11, 'Hack Log', 'hacklog', 'Monitor Possible Xss Hack Attempts', 6, 1, 1217838737),
+(12, 'Client Viewer', 'detectclients', 'View Clients Peer Id For Banning Clients', 6, 1, 1217838860),
+(15, 'Slots Manager', 'slotmanage', 'Manage Members Freeslots', 6, 1, 1217839273),
+(16, 'Delete User', 'delacctadmin', 'Delete Members Accounts', 5, 1, 1217839394),
+(17, 'Check Torrent Comments', 'torrentcomments', 'Check Comments For Karma Whores', 5, 1, 1217839483),
+(18, 'Group message', 'grouppm', 'Group select All Members - test', 5, 1, 1217840638),
+(19, 'View Reports', 'reports', 'View All Site Reports', 5, 1, 1217840706),
+(20, 'Flush Log', 'flush_log', 'View All Members Flushes', 5, 1, 1217841092),
+(21, 'Announcements', 'usersearch', 'Create New Announcement', 5, 1, 1217843007),
+(22, 'Banned Clients', 'client_clearban', 'View Banned And Ban Clients', 5, 1, 1217843161),
+(23, 'Invite Manager', 'inviteadd', 'Manage Members Invites', 5, 1, 1217843289),
+(24, 'Reset ShoutBox', 'resetshoutbox', 'Clear Old Shout Box History', 5, 1, 1217853919),
+(25, 'Edit Faq', 'faqadmin', 'Edit Site Faq Categories', 5, 1, 1217854009),
+(27, 'Bonus Manager', 'bonusmanage', 'Manage Site Bonus Options', 5, 1, 1217854158),
+(28, 'Add User', 'adduser', 'Manually Create A New Account', 5, 1, 1217854252),
+(29, 'Advanced Account Manager', 'acpmanage', 'Manage Bans - Disabled - Pending Users', 5, 1, 1217854481),
+(30, 'Reset Banned', 'maxlogin', 'Reset Banned Failed Login Attempts', 5, 1, 1217854628),
+(31, 'Edit Rules', 'rules_admin', 'Edit Site Rules', 5, 1, 1217856210),
+(33, 'Edit Links', 'links_admin', 'Edit Site Links', 5, 1, 1217856548),
+(34, 'Warned User''s', 'warned', 'Manage Warned Users', 4, 1, 1217861230),
+(35, 'Rip Nfo', 'nforipper', 'Rip Ascii From Nfo''s', 4, 1, 1217861313),
+(36, 'Invited Users', 'invitedby', 'Show All Invited Users', 4, 1, 1217861373),
+(37, 'Uploader Activity', 'stats', 'View Uploader Activity And Categorie Activity', 4, 1, 1217861859),
+(38, 'Category Manager', 'categorie', 'Manage Site Categories', 4, 1, 1217861924),
+(39, 'Name Changer', 'namechanger', 'Change Members Nicks', 4, 1, 1217862003),
+(40, 'Site Log', 'log', 'View All Site log Entrys', 4, 1, 1217862053),
+(41, 'User List', 'users', 'Full Site User List', 4, 1, 1217862162),
+(42, 'Forum Manager', 'forummanage', 'Manage And Edit Forums', 6, 1, 1217862210),
+(43, 'Inactive Users', 'inactive', 'Show All Inactive Members - Notify By Email', 4, 1, 1217862406),
+(44, 'Reset Password', 'reset', 'Reset Forgotten Passwords', 4, 1, 1217862448),
+(45, 'Snatched Torrents', 'snatched_torrents', 'View All Site Snatches', 4, 1, 1217862509),
+(46, 'Duplicate Ip''s', 'ipcheck', 'Check Site For Duplicate Ip''s', 4, 1, 1217862581),
+(47, 'Not Connectable', 'findnotconnectable', 'View All Non-Connectable Members', 4, 1, 1217862663),
+(48, 'Site Peers', 'viewpeers', 'View All Site Peers', 4, 1, 1217862722),
+(50, 'Advanced User Search', 'usersearch1', 'Carry Out Advanced User Searches', 4, 1, 1218321784),
+(51, 'HtAccessor', 'htaccesser', 'Make .Htaccess files', 7, 1, 1218993346),
+(53, 'Check Invites', 'invitesinplay', 'Keep Tabs on invite''s ', 6, 1, 1219524702),
+(84, 'View Activity', 'activity', 'View activity chart for all members', 4, 1, 1237419862),
+(56, 'Cache Countries', 'cachecountries', 'Cache Countries When Adding New Entrys', 6, 1, 1219664241),
+(57, 'Cache Categories', 'cachecategories', 'Cache Catigories When Adding New Entry', 6, 1, 1219664338),
+(58, 'View Shout History', 'shistory', 'Shout History Check', 6, 1, 1220057674),
+(59, 'Php File Edit Log', 'editlog', 'Coders Php File Edit Log', 7, 1, 1220104851),
+(61, 'Users Possibilities', 'userspos', 'View User Settings', 4, 1, 1220640589),
+(62, 'PhpInfo', 'system_view', 'PhpInfo - Check Filepaths And Configs', 7, 1, 1220781999),
+(63, 'Byte Calculator', 'calculator', 'Convert gigbytes to bytes ect for ratio adjustments', 4, 1, 1221381023),
+(65, 'Reveal Ip Location', 'iptocountry', 'Show Geo Location On Any Ip', 5, 1, 1221406559),
+(66, 'Ban Spoof Emails', 'bannedemails', 'Ban Fake Email Address From Being Used On Sign Up', 5, 1, 1221937606),
+(67, 'Mass Freeleech', 'massfree', 'Not All FreeDownload - Sets Individual Torrent''s To  Countstats On Or Off', 4, 1, 1222420548),
+(70, 'Staff Actions Log', 'sysoplog', 'Staff Functions Log', 6, 1, 1224993991),
+(71, 'Passkey Checker', 'passkeyerr', 'View Possible passkey cheaters', 6, 1, 1228089465),
+(72, 'Manage Onsite Staff', 'maxcoder', 'Add new staff members here - Warning Be Careful When Using This !', 7, 1, 1231104615),
+(73, 'Ratio Cheaters', 'cheaters', 'Check Abnormal Upload Speeds', 5, 1, 1231966160),
+(74, 'Create A Countdown Event', 'countdown', 'Countdown Timer Control', 6, 1, 1231966233),
+(76, 'Promotions', 'promo', 'Create A Bonus Promtion Link', 4, 1, 1235842359),
+(77, 'Clear SnatchList', 'cleansnatch', 'Clear old snatchlist data', 6, 1, 1235842471),
+(78, 'Staff News', 'snews', 'News system for staff only', 4, 1, 1235843654),
+(79, 'Clean Comments', 'cleancomm', 'Clean old comments where torrent has been deleted', 6, 1, 1235941157),
+(80, 'Clean Old Thank You''s', 'cleanthanks', 'Remove Thank You''s where torrent has been deleted', 6, 1, 1235941233),
+(81, 'Ip Who Is', 'whois', 'Full ip whois check', 4, 1, 1236022748),
+(82, 'Clean Old Ratings', 'cleanratings', 'Remove old ratings where torrents have been deleted', 6, 1, 1236083498),
+(83, 'Site Admin Cp', 'core', 'Configure Tracker', 6, 1, 1238444907),
+(85, 'Manage Sub Forums', 'msubforums', 'Manage And Edit Sub  Forums', 7, 1, 1239624404),
+(86, 'Reset  Ratio', 'datareset', 'Reset bad or nuked torrents ratio here', 5, 1, 1241353996),
+(87, 'View Seeders', 'seeders', 'View top site seeders here - sortable.', 4, 1, 1241419341),
+(88, 'Edit Php Files', 'editfiles', 'Edit ftp php files from tracker - may require chmod', 7, 1, 1244402416),
+(89, 'Cache Categorie Icons', 'cachecategorieicons', 'Cache Categorie Icons When Adding New Entrys', 6, 1, 1248095454),
+(90, 'Reputation system admin', 'reputation_ad', 'Manage Reputation Settings', 6, 1, 1248181330),
+(91, 'Reputation Settings', 'reputation_settings', 'Manage Site Reputation Settings', 6, 1, 1248267385);
 
 -- --------------------------------------------------------
 
