@@ -2,6 +2,7 @@
 // CyBerFuN.Ro
 // By CyBerNe7
 //            //
+// www.cyberfun.ro
 require ("include/bittorrent.php");
 require_once ("include/user_functions.php");
 require_once ("include/bbcode_functions.php");
