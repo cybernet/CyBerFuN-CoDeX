@@ -53,5 +53,4 @@ stdhead("Ratio Edit");
 </form>
 <?php
 stdfoot();
-
 ?>
