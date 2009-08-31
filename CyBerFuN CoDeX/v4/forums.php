@@ -2,6 +2,10 @@
 /**
 * Bleach Forums Improved and Optimized for TBDEV.NET by Alex2005
 */
+// CyBerFuN.Ro
+// By CyBerNe7
+//            //
+// www.cyberfun.ro //
 $page_find ='forums';
 include("include/bittorrent.php");
 require_once "include/user_functions.php";
@@ -877,7 +881,8 @@ if ($action == 'updatetopic') {
 
         sql_query("DELETE posts.*, topics.*, forums.* " . ($use_attachment_mod ? ", attachments.*, attachmentdownloads.* " : "") . ($use_poll_mod ? ", postpolls.*, postpollanswers.* " : "") . "FROM posts " .
             ($use_attachment_mod ? "LEFT JOIN attachments ON attachments.postid = posts.id " . "LEFT JOIN attachmentdownloads ON attachmentdownloads.fileid = attachments.id " : "") . "LEFT JOIN topics ON topics.id = posts.topicid " . "LEFT JOIN forums ON forums.id = topics.forumid " .
-            ($use_poll_mod ? "LEFT JOIN postpolls ON postpolls.id = topics.pollid " . "LEFT JOIN postpollanswers ON postpollanswers.pollid = postpolls.id " : "") . "WHERE posts.topicid IN (" . join(', ', $tids) . ")") or sqlerr(__FILE__, __LINE__);
+            ($use_poll_mod ? "LEFT JOIN postpolls ON postpolls.id = topics.pollid " . "LEFT JOIN postpollanswers ON postpollanswers.pollid = postpolls.id " : "") . "WHERE posts.topicid IN (" . join(", ", $tids) . ")") or sqlerr(__FILE__, __LINE__);
+//cybernet
 
         header("Location: {$_SERVER['PHP_SELF']}");
         exit();
