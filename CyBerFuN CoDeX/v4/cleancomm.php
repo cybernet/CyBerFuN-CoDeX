@@ -25,7 +25,7 @@ if (!function_exists('memory_get_usage')) {
         // If its Windows
         // Tested on Win XP Pro SP2. Should work on Win 2003 Server too
         // Doesn't work for 2000
-        // If you need it to work for 2000 look at http://us2.php.net/manual/en/function.memo...usage.php#54642
+        // If you need it to work for 2000 look at http://us2.php.net/manual/en/function.memory-get-usage.php
         if (substr(PHP_OS, 0, 3) == 'WIN') {
             if (substr(PHP_OS, 0, 3) == 'WIN') {
                 $output = array();
