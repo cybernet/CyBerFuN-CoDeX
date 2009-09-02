@@ -247,9 +247,9 @@ if ($fp) {
 mysql_query("UPDATE users SET seedbonus = seedbonus+15.0 WHERE id = $CURUSER[id]") or sqlerr(__FILE__, __LINE__);
 // ///writelog/////////
 if ($CURUSER["anonymous"] == 'yes')
-    write_log("Torrent $id ($torrent) was uploaded by Anonymous");
+    write_log("torrentupload","Torrent $id ($torrent) was uploaded by Anonymous");
 else
-    write_log("Torrent $id ($torrent) was uploaded by $CURUSER[username]");
+    write_log("torrentupload","Torrent $id ($torrent) was uploaded by $CURUSER[username]");
 // //////new torrent upload detail sent to shoutbox//////////
 autoshout($message);
 // ///////////////////////////end///////////////////////////////////
