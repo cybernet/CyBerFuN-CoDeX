@@ -18,6 +18,6 @@ DELETE FROM `stylesheets` WHERE `stylesheets`.`id` = 9 LIMIT 1;
 ALTER TABLE `users` CHANGE `title` `title` VARCHAR( 32 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT 'last update 09/04/2009 ( US datetime ) / cybernet / www.cyberfun.ro /' ;
 DELETE FROM `bonus` WHERE `bonus`.`id` = 5 LIMIT 1;
 
---- test / cybernet2u
+--- Have FuN on CyBerFuN / cybernet2u
 
 
