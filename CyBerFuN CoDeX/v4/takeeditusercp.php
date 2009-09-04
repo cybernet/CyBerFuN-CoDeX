@@ -1,8 +1,12 @@
 <?php
+// CyBerFuN.Ro
+// By CyBerNe7
+//            //
+// www.cyberfun.ro //
 /**
 * Updated takeeditusercp.php By Bigjoos & putyn
 * Credits: Djlee's code from takeprofileedit.php - Retro for the original idea - credits to the original usercp coder
-*/
+**/
 require_once("include/bittorrent.php");
 require_once ("include/user_functions.php");
 require_once ("include/bbcode_functions.php");
@@ -95,7 +99,6 @@ if ($action == "avatar") {
     $ctnotallow = array("sysop", "administrator", "admin", "mod", "moderator", "vip", "motherfucker");
     if (in_array(strtolower($title), ($ctnotallow)))
     bark("Error, Invalid custom title!");
-    $updateset[] = "pre_title = ".sqlesc($title);
     $title = format_comment($title,true,false);
     $updateset[] = "title = " . sqlesc($title);
     }
