@@ -766,7 +766,8 @@ if (isset($_GET['lang']) && (in_array($_GET['lang'], $langs)))
     if (!$ss_uri) {
         $stylesheet = getrow('id', '1', $stylesheets);
 
-        $ss_uri = $stylesheet['uri'];
+        //$ss_uri = $stylesheet['uri'];
+$ss_uri = "NB-Revolt";
     }
     $GLOBALS["curentstyle"] = $ss_uri;
     /////////// cached by Bigjoos - Categorie Icon Set`s by ShadoW69   
