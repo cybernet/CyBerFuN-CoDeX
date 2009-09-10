@@ -1,4 +1,6 @@
 <?php
+// www.cyberfun.ro //
+//     CyBerNe7   //
 $stime = array_sum(explode(' ', microtime())); // start execution time
 $tstart = timer(); // Start timer
 define('ROOT_PATH', $_SERVER['DOCUMENT_ROOT'] . '/');
@@ -175,8 +177,9 @@ function maxcoder ()
             $body = sqlesc("User " . $CURUSER["username"] . " has attempted to hack the tracker using a super class - the account has been disabled");
             auto_post($subject , $body);
             $msg = "Hack Attempt Detected - now go to ip bans in staff tools and cache the ban : Username: " . $CURUSER["username"] . " - UserID: " . $CURUSER["id"] . " - UserIP : " . getip();
-            sql_query("INSERT INTO messages (poster, sender, receiver, added, subject, msg) VALUES(0, 0, '1', '" . get_date_time() . "', " . $subject . " , " . sqlesc($msg) . ")") or sqlerr(__FILE__, __LINE__);
-            write_log($msg);
+            sql_query("INSERT INTO messages (poster, sender, receiver, added, subject, msg) VALUES(0, 2, '1', '" . get_date_time() . "', " . $subject . " , " . sqlesc($msg) . ")") or sqlerr(__FILE__, __LINE__);
+            write_log('accdisabled', $msg);
+            write_log('autoban', $msg);
             fclose($fp);
             stderr("Access Denied!", "Ha Ha you retard - Did you honestly think you could pull that one off !");
         }
@@ -199,8 +202,9 @@ function maxcoder ()
             $body = sqlesc("User " . $CURUSER["username"] . " has attempted to hack the tracker using an unauthorized account- the account has been disabled");
             auto_post($subject , $body);
             $msg = "Fake Account Detected now go to ip bans in staff tools and cache the ban : Username: " . $CURUSER["username"] . " - UserID: " . $CURUSER["id"] . " - UserIP : " . getip();
-            sql_query("INSERT INTO messages (poster, sender, receiver, added, subject, msg) VALUES(0, 0, '1', '" . get_date_time() . "', " . $subject . " , " . sqlesc($msg) . ")") or sqlerr(__FILE__, __LINE__);
-            write_log($msg);
+            sql_query("INSERT INTO messages (poster, sender, receiver, added, subject, msg) VALUES(0, 2, '1', '" . get_date_time() . "', " . $subject . " , " . sqlesc($msg) . ")") or sqlerr(__FILE__, __LINE__);
+            write_log('accdisabled', $msg);
+            write_log('autoban', $msg);
             fclose($fp2);
             stderr("Access Denied!", "Sorry but your not an authorized staff member - nice try your banned !");
         }
@@ -261,7 +265,7 @@ function userlogin()
         return;
     if ($row['logout']=='yes' && $row['last_access'] > $row['last_login']  && $row['last_access'] < time()- 900)
     {
-    logoutcookie();	
+    logoutcookie();
     return;
     }
     if (($row['last_access'] != '0000-00-00 00:00:00') AND (strtotime($row['last_access']) < (strtotime($dt) - 300))/** 5 mins **/ || ($row['ip'] !== $ip) || ($row['ipf'] !== '' && $row['ipf'] !== $ipf)) 
@@ -579,6 +583,7 @@ function hashit($var, $addtext = "")
     return md5("Some " . $addtext . $var . $addtext . " sal7 mu55ie5 wat3r.@.");
 }
 // ///////////// Basic MySQL error handler//==tbsource alpha
+// cyberfun
 function sqlerr($file = '', $line = '')
 {
     global $sql_error_log, $CURUSER;
@@ -914,4 +919,6 @@ function getpre($name, $type)
 }
 */
 /////////////////////////////
+// www.cyberfun.ro //
+//     CyBerNe7   //
 ?>
