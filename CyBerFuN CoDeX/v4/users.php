@@ -1,4 +1,8 @@
 <?php
+// CyBerFuN.Ro
+// By CyBerNe7
+//            //
+// www.cyberfun.ro //
 require "include/bittorrent.php";
 require "include/bbcode_functions.php";
 dbconn();
@@ -16,7 +20,10 @@ die();
 stdhead("Users");
 
 
-$res = mysql_query("SELECT * FROM users WHERE username LIKE 'a%' ORDER BY username LIMIT 50");
+$res = mysql_query("SELECT *
+FROM `users`
+WHERE `status` = 'confirmed'
+AND `enabled` = 'yes'");
 
 $num = mysql_num_rows($res);
 
@@ -27,7 +34,9 @@ for ($i = 0; $i < $num; ++$i)
   $arr = mysql_fetch_assoc($res);
   if ($arr['country'] > 0)
   {
-    $cres = mysql_query("SELECT name,flagpic FROM countries WHERE id=$arr[country]");
+    $cres = mysql_query("SELECT name, flagpic
+FROM countries
+WHERE id =$arr[country]");
     if (mysql_num_rows($cres) == 1)
     {
       $carr = mysql_fetch_assoc($cres);
@@ -121,6 +130,6 @@ if(pos > -1)
 }
 </script>
 
-<?php
+<?
 stdfoot();
 ?>

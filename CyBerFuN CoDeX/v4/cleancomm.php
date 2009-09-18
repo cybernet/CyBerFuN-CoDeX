@@ -65,5 +65,4 @@ print("Memory usage:" . memory_get_usage() . "<br /><br />");
 end_frame();
 end_main_frame();
 stdfoot();
-
 ?>
