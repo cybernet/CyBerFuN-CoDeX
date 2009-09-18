@@ -361,7 +361,7 @@ if (!$enabled)
     echo ("<p><b>This account has been disabled</b></p>\n");
 if (($user["showfriends"] == "yes") || get_user_class() >= UC_USER) {
     if ($CURUSER["id"] <> $user["id"]) {
-        echo ("<p>(<a href=" . $DEFAULTBASEURL . "/userfriends.php?id=$id>add comment</a>)");
+        echo ("<p>(<a href=" . $DEFAULTBASEURL . "/usercomment.php?action=add&userid=$id>add comment</a>)");
         $r = sql_query("SELECT id, friendid FROM friends WHERE (userid=$CURUSER[id] OR userid=$id) AND (friendid=$id OR friendid=$CURUSER[id])") or
             sqlerr(__file__, __line__);
         $friend = mysql_num_rows($r);

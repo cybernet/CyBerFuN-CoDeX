@@ -1,8 +1,4 @@
 <?php
-// CyBerFuN.Ro
-// By CyBerNe7
-//            //
-// www.cyberfun.ro //
 ////////////////////////////////////////////////////////
 // Bonus Mod by TvRecall.org
 // Bonus Mod Updated by devin
@@ -544,13 +540,10 @@ the user class is just for show, but what the hell :p Add more or edit to your l
 *note if they try to use a restricted word, they will recieve the special title "I just wasted my karma" *****/
 
 $title = sqlesc(htmlentities($_POST['title']));
-$words = array('fuck', 'shit', 'Moderator', 'Administrator', 'Admin', 'pussy', 'Sysop', 'cunt', 'nigger', 'VIP', 'Super User', 'Power User', 'ADMIN', 'SYSOP', 'MODERATOR', 'ADMINISTRATOR', 'cyberfun');
+$words = array('fuck', 'shit', 'Moderator', 'Administrator', 'Admin', 'pussy', 'Sysop', 'cunt', 'nigger', 'VIP', 'Super User', 'Power User', 'ADMIN', 'SYSOP', 'MODERATOR', 'ADMINISTRATOR');
 $title = str_replace($words, "I just wasted my karma", $title);
 $bonuscomment = gmdate("Y-m-d") . " - " .$points. " Points for custom title. old title was $CURUSER[title] new title is $title\n " .$bonuscomment;
-sql_query("UPDATE `users` SET `title` = '$title',
-`seedbonus` = '$seedbonus',
-`bonuscomment` = '$bonuscomment',
-`lastchange` = '" . get_date_time() . "' WHERE `users`.`id` =$userid LIMIT 1 ;") or sqlerr(__FILE__, __LINE__);
+sql_query("UPDATE users SET title = $title, lastchange='" . get_date_time() . "', seedbonus = '$seedbonus', bonuscomment = '$bonuscomment' WHERE id = '$userid'") or sqlerr(__FILE__, __LINE__);
 header("Refresh: 0; url=$BASEURL/mybonus.php?title_success=1");
 die;
 break;
