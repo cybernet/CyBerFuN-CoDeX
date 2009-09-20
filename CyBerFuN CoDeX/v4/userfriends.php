@@ -1,4 +1,8 @@
 <?php
+// CyBerFuN.Ro
+// By CyBerNe7
+//            //
+// www.cyberfun.ro //
 // userfriends.php - by pdq
 require "include/bittorrent.php";
 require_once "include/user_functions.php";
@@ -62,12 +66,21 @@ if (!$userid)
 if (!is_valid_id($userid))
     stderr("Error", "Invalid ID.");
 
-$res = mysql_query("SELECT * FROM users WHERE id=$userid") or sqlerr(__FILE__, __LINE__);
+$res = mysql_query("SELECT *
+FROM users
+WHERE id =$userid") or sqlerr(__FILE__, __LINE__);
 $user = mysql_fetch_array($res) or stderr("Error", "No user with ID.");
 
-$r = mysql_query("SELECT id, friendid FROM friends WHERE userid=$userid AND friendid=$id AND confirmed = 'yes'") or sqlerr(__FILE__, __LINE__);
+$r = mysql_query("SELECT id, friendid
+FROM friends
+WHERE userid =$userid
+AND friendid =$id
+AND confirmed = 'yes'") or sqlerr(__FILE__, __LINE__);
 $friend = mysql_num_rows($r);
-$r = mysql_query("SELECT id FROM blocks WHERE userid=$userid AND blockid=$id") or sqlerr(__FILE__, __LINE__);
+$r = mysql_query("SELECT id
+FROM blocks
+WHERE userid =$userid
+AND blockid =$id") or sqlerr(__FILE__, __LINE__);
 $block = mysql_num_rows($r);
 if ((!$friend) || $block) {
     if ($user["showfriends"] != "yes" && $CURUSER["id"] != $user["id"] && (get_user_class() < UC_MODERATOR))
@@ -89,7 +102,12 @@ print("<table width=737 border=1 cellspacing=0 cellpadding=5><tr><td>");
 
 $i = 0;
 
-$res = mysql_query("SELECT f.friendid as id, u.username AS name, u.class, u.avatar, u.title, u.donor, u.warned, u.enabled, u.last_access FROM friends AS f LEFT JOIN users as u ON f.friendid = u.id WHERE userid=$userid AND f.confirmed='yes' ORDER BY name") or sqlerr(__FILE__, __LINE__);
+$res = mysql_query("SELECT f.friendid AS id, u.username AS name, u.class, u.avatar, u.title, u.donor, u.warned, u.enabled, u.last_access
+FROM friends AS f
+LEFT JOIN users AS u ON f.friendid = u.id
+WHERE userid =$userid
+AND f.confirmed = 'yes'
+ORDER BY name") or sqlerr(__FILE__, __LINE__);
 if (mysql_num_rows($res) == 0)
     $friends = "<em>" . $user['username'] . " has no friends.</em>";
 else
@@ -139,7 +157,9 @@ print("<p><a name=\"startcomments\"></a></p>\n");
 
 $commentbar = "<p align=center><a class=index href=usercomment.php?action=add&amp;userid=$userid>Add a comment</a></p>\n";
 
-$subres = mysql_query("SELECT COUNT(*) FROM usercomments WHERE userid = $userid");
+$subres = mysql_query("SELECT COUNT( * )
+FROM usercomments
+WHERE userid =$userid") or sqlerr(__FILE__, __LINE__);
 $subrow = mysql_fetch_array($subres, MYSQL_NUM);
 $count = $subrow[0];
 
