@@ -1,4 +1,8 @@
 <?php
+// CyBerFuN.Ro
+// By CyBerNe7
+//            //
+// www.cyberfun.ro //
 require_once("include/benc.php");
 require_once("include/bittorrent.php");
 require_once "include/user_functions.php";
@@ -54,8 +58,10 @@ if ($ft == 1) {
     $bitrate = 0 + $_POST['bitrate'];
     if (!$_POST['bitrate'])
         stderr("Error", "You must enter the bitrate!");
+/*
     if ($bitrate < 160)
         stderr("Error", "Bitrate must be greater than 160 kbps!");
+*/
     if (!is_numeric($bitrate))
         stderr("Error", "Bitrate must be numeric");
     if (strlen($bitrate) > 10)
@@ -217,9 +223,9 @@ $ret = mysql_query("INSERT INTO torrents (search_text, filename, owner, visible,
     implode(",", array_map("sqlesc", array(searchfield("$shortfname $dname $torrent"), $fname, $CURUSER["id"], "no", $anonymous, $infohash, $torrent, $totallen, count($filelist), $type, $descr, $descr, 0 + $_POST["type"], $dname))) . ", '" . get_date_time() . "', '" . get_date_time() . "', $nfo)");
 // //////new torrent upload detail sent to shoutbox//////////
 if ($CURUSER["anonymous"] == 'yes')
-    $message = "New Torrent : ($torrent) Uploaded - Anonymous User";
+    $message = "New Torrent : [url=$DEFAULTBASEURL/details.php?id=$id] " . safeChar($torrent) . "[/url] Uploaded - Anonymous User";
 else
-    $message = "New Torrent : ($torrent) Uploaded by " . safechar($CURUSER["username"]) . "";
+    $message = "New Torrent : [url=$DEFAULTBASEURL/details.php?id=$id] " . safeChar($torrent) . "[/url] Uploaded by " . safechar($CURUSER["username"]) . "";
 // ///////////////////////////END///////////////////////////////////
 if (!$ret) {
     if (mysql_errno() == 1062)
