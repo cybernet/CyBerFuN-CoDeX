@@ -19,5 +19,16 @@ ALTER TABLE `users` CHANGE `title` `title` VARCHAR( 32 ) CHARACTER SET utf8 COLL
 DELETE FROM `bonus` WHERE `bonus`.`id` = 5 LIMIT 1;
 ALTER TABLE `topics` CHANGE `subject` `subject` VARCHAR( 100 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL
 DELETE FROM `staffpanel` WHERE `staffpanel`.`id` = 21 LIMIT 1
-
+INSERT INTO `staffpanel` (
+`id` ,
+`page_name` ,
+`file_name` ,
+`description` ,
+`av_class` ,
+`added_by` ,
+`added`
+)
+VALUES (
+NULL , 'Add News', 'news', 'Here you can add your tracker news', '6', '1', '1253889371'
+);
 -- Have FuN on CyBerFuN / cybernet2u

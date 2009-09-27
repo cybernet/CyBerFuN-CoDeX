@@ -453,13 +453,18 @@ if (isset($unread) && !empty($unread)) {
     echo("<b><a href=$BASEURL/messages.php?action=viewmailbox><font color=white>You have $unread new message" . ($unread > 1 ? "s" : "") . "!</font></a></b>");
     echo("</td></tr></table></p>\n");
 }
-// happy hour
 if ($CURUSER) {
+echo("<br/>");
+echo ("<table align=center border=0 cellspacing=0 cellpadding=10 bgcolor=red><tr><td style=\"padding: 10px; background-image: url(pic/back_newpm.gif)\">\n");
+echo("<b><a href=$BASEURL/upload.php><font color=white>Upload and get 15 bonus points!</font></a></b>");
+echo("</td></tr></table></p>\n");
+
+// happy hour
     if (happyHour("check")) {
-        echo("<table border=0 cellspacing=0 cellpadding=10  ><tr><td align=center style=\"background:#CCCCCC;color:#222222; padding:10px\">\n");
+        echo("<table align=center border=0 cellspacing=0 cellpadding=10  ><tr><td align=center style=\"background:#CCCCCC;color:#222222; padding:10px\">\n");
         echo("<b>Hey its now happy hour ! " . ((happyCheck("check") == 255) ? "Every torrent downloaded in the happy hour is free" : "Only <a href=\"browse.php?cat=" . happyCheck("check") . "\">this category</a> is free this happy hour") . "<br/><font color=red>" . happyHour("time") . " </font> remaining from this happy hour!</b>");
         echo("</td></tr></table>\n");
-    }
+             }
 }
 // === report link by pdq :)
   if ($CURUSER['class'] >= UC_MODERATOR) { 

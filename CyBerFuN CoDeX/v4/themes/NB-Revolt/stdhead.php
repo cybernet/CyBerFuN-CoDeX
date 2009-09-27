@@ -271,7 +271,7 @@ JSFX.Rollover("logout", "themes/NB-Revolt/pic/btn-logout-o.jpg");
 
 	<table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td class="border2" style="height:109px; background:url(themes/NB-Revolt/pic/logo-bkg.jpg);" align="center" valign="middle"><img src="themes/NB-Revolt/pic/logo.jpg" width="649" height="109" /></td>
+    <td class="border2" style="height:109px; background:url(themes/NB-Revolt/pic/logo-bkg.jpg);" align="center" valign="middle"><img src="themes/NB-Revolt/pic/cyberfun_tracker.png" width="649" height="109" /></td>
     <td width="109" style="height:109px; background:url(themes/NB-Revolt/pic/avatar-bkg.jpg);" align="center" valign="middle" class="border3"><span class="avat_m">
 <?php
 $avatar = safechar($CURUSER["avatar"]);
@@ -296,13 +296,6 @@ echo ('<img src="' . $avatar . '" alt="' . $CURUSER[username] . $salt . ' " titl
 <?php if ($CURUSER) {
     ?>
 <script type="text/javascript" src="themes/NB-Revolt/Scripts/chrome.js">
-
-/***********************************************
-* Chrome CSS Drop Down Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
-
 </script>
 </head>
 
@@ -566,13 +559,18 @@ if (isset($unread) && !empty($unread)) {
     echo("<b><a href=$BASEURL/messages.php?action=viewmailbox><font color=white>You have $unread new message" . ($unread > 1 ? "s" : "") . "!</font></a></b>");
     echo("</td></tr></table></p>\n");
 }
-// happy hour
 if ($CURUSER) {
+echo("<br/>");
+echo ("<table align=center border=0 cellspacing=0 cellpadding=10 bgcolor=red><tr><td style=\"padding: 10px; background-image: url(pic/back_newpm.gif)\">\n");
+echo("<b><a href=$BASEURL/upload.php><font color=white>Upload and get 15 bonus points!</font></a></b>");
+echo("</td></tr></table></p>\n");
+
+// happy hour
     if (happyHour("check")) {
         echo("<table align=center border=0 cellspacing=0 cellpadding=10  ><tr><td align=center style=\"background:#CCCCCC;color:#222222; padding:10px\">\n");
         echo("<b>Hey its now happy hour ! " . ((happyCheck("check") == 255) ? "Every torrent downloaded in the happy hour is free" : "Only <a href=\"browse.php?cat=" . happyCheck("check") . "\">this category</a> is free this happy hour") . "<br/><font color=red>" . happyHour("time") . " </font> remaining from this happy hour!</b>");
         echo("</td></tr></table>\n");
-    }
+             }
 }
 // ////////////////
 if ($CURUSER["tenpercent"] == "no") {
