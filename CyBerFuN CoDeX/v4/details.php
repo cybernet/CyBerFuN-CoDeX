@@ -825,7 +825,7 @@ ORDER BY u.username DESC");
 // Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / starts
 if ($CURUSER["id"] == $row["owner"]) {
 
-tr("" . $language['report'] . "", "You can't Report your own torrent <img src=\"pic/smilies/laugh.gif\"border=0> for breaking the <a href=rules.php>rules</a></form>", 1);
+tr("" . $language['report'] . "", "You can't Report your own torrent <img src=\"pic/smilies/laugh.gif\"border=0> for breaking the <a href=rules.php>rules</a>", 1);
 
 }
 else 
