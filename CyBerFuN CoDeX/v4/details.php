@@ -420,12 +420,17 @@ else
 &nbsp;&nbsp;Your new ratio if you download this torrent.</td></tr>
 <?php
 }
-
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / start
+if ($CURUSER["id"] == $row["owner"]) {
+}
+else {
             // / Mod by dokty - tbdev.net
             $blasd = sql_query("SELECT points FROM coins WHERE torrentid=$id AND userid=" . unsafeChar($CURUSER["id"]));
             $sdsa = mysql_fetch_assoc($blasd) or $sdsa["points"] = 0;
             tr("Points", "<b>In total " . safeChar($row["points"]) . " Points given to this torrent of which " . safeChar($sdsa["points"]) . " from you.<br /><br />By clicking on the coins you can give points to the uploader of this torrent.</b><br /><br /><a href=coins.php?id=$id&points=10><img src=pic/10coin.jpg border=0></a>&nbsp;&nbsp;<a href=coins.php?id=$id&points=20><img src=pic/20coin.jpg border=0></a>&nbsp;&nbsp;<a href=coins.php?id=$id&points=50><img src=pic/50coin.jpg border=0></a>&nbsp;&nbsp;<a href=coins.php?id=$id&points=100><img src=pic/100coin.jpg border=0></a>&nbsp;&nbsp;<a href=coins.php?id=$id&points=200><img src=pic/200coin.gif border=0></a>&nbsp;&nbsp;<a href=coins.php?id=$id&points=500><img src=pic/500coin.gif border=0></a>&nbsp;&nbsp;<a href=coins.php?id=$id&points=1000><img src=pic/1000coin.gif border=0></a>", 1);
             // //////////end modified bonus points for uploader///////
+    }
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / ends
             function hex_esc($matches)
             {
                 return sprintf("%02x", ord($matches[0]));
@@ -434,29 +439,33 @@ else
         } else {
             tr("Download", "You are not allowed to download");
         }
-        //////////////////poster mod
+        // poster mod //
         if (!empty($row["poster"]))                                                                                                                                                                           
         tr("".$language['pos']."", "<a href=\"javascript: klappe_news('a3')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica3".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka3\" style=\"display: none;\"><br><a href='" . safeChar($row["poster"]) . "' rel='lightbox' title='" . CutName(safeChar($row["name"]), 35) . "'><img src='" . safeChar($row["poster"]) . "' border=0 width=150></a></div>", 1);
 		    else
         tr("".$language['pos']."", "<a href=\"javascript: klappe_news('a3')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica3".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka3\" style=\"display: none;\"><br>Poster Not Available</div>", 1);       
-        ///////////////youtube sample//////////////
+        // youtube sample //
         if (!empty($row["tube"]))
             tr("".$language['sam']."", "<a href=\"javascript: klappe_news('a2')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica2" . $array['id'] . "\" alt=\"[Hide/Show]\"></a><div id=\"ka2\" style=\"display: none;\"><br><embed src='" . str_replace("watch?v=", "v/", htmlspecialchars($row["tube"])) . "' type=\"application/x-shockwave-flash\" width=\"500\" height=\"410\"></embed></div>", 1);
         else
             tr("".$language['sam']."", "<a href=\"javascript: klappe_news('a2')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica2" . $array['id'] . "\" alt=\"[Hide/Show]\"></a><div id=\"ka2\" style=\"display: none;\"><br>Sample Not Available</div>", 1);
-        //////////////////description////////////////
+        // description //
+// Updated By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / start
         if ($dtype)
-            tr("".$language['desc']."", "<a href=\"javascript: klappe_news('a1')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica1".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka1\" style=\"display: none;\"><br>".format_comment($row["descr"])."</div>", 1);
+            tr("".$language['desc']."", "".format_comment($row["descr"])."</div>", 1);
         else
-            tr("".$language['desc']."", "<a href=\"javascript: klappe_news('a1')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica1".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka1\" style=\"display: none;\"><br>".format_urls($row["descr"])."</div>", 1);
-        //////////////////small description////  
+            tr("".$language['desc']."", "".format_urls($row["descr"])."</div>", 1);
+// Updated By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / ends
+/*
+        // small description //  
         if (!empty($row["description"]))                                                                                                                                                                           
         tr("".$language['sdesc']."", "<a href=\"javascript: klappe_news('a5')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica5".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka5\" style=\"display: none;\"><br>$descrs</div>", 1);
 		    else
         tr("".$language['sdesc']."", "<a href=\"javascript: klappe_news('a5')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica5".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka5\" style=\"display: none;\"><br>Small Description Not Available</div>", 1);         
-        //Auto view nfo
+*/
+        // Auto view nfo
         if (empty($row["descr"])) {
-            $r = sql_query("SELECT name,nfo FROM torrents WHERE id=$id") or sqlerr();
+            $r = sql_query("SELECT name, nfo FROM torrents WHERE id=$id") or sqlerr();
             $a = mysql_fetch_assoc($r) or die("Puke");
             $nfo = safeChar($a["nfo"]);
             echo("<h1>NFO for <a href=details.php?id=$id>$a[name]</a></h1>\n");
@@ -539,7 +548,7 @@ else
               $autodata .= "<br /><br />\n\n<br />\n";
               $autodata .= "<font color=\"green\" size=\"3\"> Description:</font><br />\n";
               for ($i = 0; $i < count ($plot); $i++) {
-              $autodata .= "<br />\n<font color=\"red\">•</font> ";
+              $autodata .= "<br />\n<font color=\"red\"></font> ";
               $autodata .= "$plot[$i]";
               }      
     
@@ -551,7 +560,7 @@ else
               if ($i > 9) {
                 break;
               }
-              $autodata .= "<font color=\"red\">•</font> " . "<a target=\"_blank\" href=\"http://us.imdb.com/Name?" . "".$cast[$i]["imdb"]."" ."\">" . "".$cast[$i]["name"]."" . "</a> " . " as <strong><font color=\"red\">" . "".$cast[$i]["role"]."" . " </font></strong><br />\n";              
+              $autodata .= "<font color=\"red\"></font> " . "<a target=\"_blank\" href=\"http://us.imdb.com/Name?" . "".$cast[$i]["imdb"]."" ."\">" . "".$cast[$i]["name"]."" . "</a> " . " as <strong><font color=\"red\">" . "".$cast[$i]["role"]."" . " </font></strong><br />\n";              
               }
               trala("$smallth",$autodata,1);
               }
@@ -793,7 +802,6 @@ ORDER BY u.username DESC");
 
                     ?>
                                  <tr><td class='rowhead'><?php echo $language['dtcheck']; ?></td><td align='left'><a href='userdetails.php?id=<?php echo $checked['id']?>'><strong><?php echo $row['checked_by']?></strong></a>&nbsp;
-                                 <img src='<?php echo $pic_base_url?>mod.gif' width='15' border='0' alt='Checked' title='Checked - by <?php echo safe($row['checked_by'])?>' />
                                  <a href='details.php?id=<?php echo $row['id']?>&amp;rechecked=1'><small><em><strong>[<?php echo $language['dtcheck1']; ?>]</strong></em></small></a> &nbsp;<a href='details.php?id=<?php echo $row['id']?>&amp;clearchecked=1'><small><em><strong>[<?php echo $language['dtcheck2']; ?>]</strong></em></small></a> &nbsp;<?php echo $language['dtcheck4']; ?></td></tr>
                                  <?php
                 } else {
@@ -814,9 +822,19 @@ ORDER BY u.username DESC");
                 if (!$_GET["filelist"])
          	  tr("File list<br /><div id=\"hidefile\" class=\"sublink\"><a href=\"javascript:filelist();\" class=\"sublink\">[See full list]</a>","<div id=\"filelist\">". $row["numfiles"] . " <b>File(s)</b></div>",$s,  1);
             }
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / starts
+if ($CURUSER["id"] == $row["owner"]) {
+
+tr("" . $language['report'] . "", "You can't Report your own torrent <img src=\"pic/smilies/laugh.gif\"border=0> for breaking the <a href=rules.php>rules</a></form>", 1);
+
+}
+else 
+{
             if (!$_GET["dllist"]) {
                 tr("" . $language['report'] . "", "<form action=report.php?type=Torrent&id=$id method=post><input class=button type=submit name=submit value=\"" . $language['report1'] . "\"> for breaking the <a href=rules.php>rules</a></form>", 1);
-                ////////////////////////ajax peer list///////////        
+}
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / ends
+                // ajax peer list //        
                 tr("<a name=\"seeders\"></a>Peer(s)<br /><div id=\"nopeerlist\" class=\"sublink\"><a href=\"javascript:peerlist($id, 1)\" class=\"sublink\">[View peer list]</a>","<b><div id=\"peerlist\">". $row["seeders"] . " seeder(s), " . $row["leechers"] . " leecher(s) = " . ($row["seeders"] + $row["leechers"]) . " peer(s) total.</b></div>", 1);
                 if ($row["seeders"] == 0) {
                 echo("<form method=post action=takereseed.php?reseedid=$id><tr><td align=center class=clearalt4 colspan=2><table><tr><td align=center class=clearalt4>" . "<input class=button type=submit value='Request Reseed'></td></form></td></tr></table></td></tr>");
@@ -951,7 +969,7 @@ echo($commentbar);
             while ($subrow = mysql_fetch_assoc($subres))
             $allrows[] = $subrow;
 
-            echo($commentbar);
+            //echo($commentbar);
             echo($pagertop);
 
             commenttable($allrows);
