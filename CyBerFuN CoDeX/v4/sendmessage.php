@@ -187,6 +187,14 @@ if ($CURUSER["sendpmpos"] == 'no') {
     stdfoot();
     exit;
 }
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / start
+// user can't send messange to themselfs
+if ($CURUSER['id'] == $receiver) {
+        stdmsg('Notice', 'Why the fuck in the world would you try to send a message to yourself ?');
+        stdfoot();
+        exit;
+}
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / ends
 echo'<h1>Message to <a class=altlink href=userdetails.php?id=' . ($receiver > 0 ? $receiver : $replyto) . '>' . $arr_member['username'] . '</a></h1>' . '<table border=0 cellspacing=5 cellpadding=5 width=600><tr><td class=colhead>Send message</td></tr><form name=compose method=post action=?>' . '<tr><td colspan="2" class=clearalt6><b>Subject:&nbsp;&nbsp;</b><input name="subject" type="text" size="120" value="' . $subject . '"></td></tr><tr><td colspan=2 class=clearalt6>';
 textbbcode('compose', 'body', $body);
 echo'</td></tr><tr><td align=center class=clearalt6>' . ($CURUSER['class'] >= UC_MODERATOR? '<b><font color=red>Mark as URGENT!</font></b> ' . '<input type=checkbox name=urgent value=yes ' . (($_POST['urgent'] && $_POST['urgent'] == 'yes') ? ' checked' : '') . '>&nbsp;' : '') . ' save as Draft? ' . '<input type=checkbox name=draft value=yes ' . (($_POST['draft'] == 'yes' || $_GET['draft'] == 'yes' || $_GET['draft'] == 1) ? ' checked' : '') . '>&nbsp;' . ($replyto ? 'Delete message you are replying to? ' . '<input type=checkbox name=delete value=yes ' . ($CURUSER['deletepms'] == 'yes' ? ' checked' : '') . '><input type=hidden name=origmsg value=' . $replyto . '>' : '') . 'Save message to Sentbox? <input type=checkbox name=save value=1' . ($CURUSER['savepms'] == 'yes' ? ' checked' : '') . '></td></tr>' . '<tr><td' . ($replyto ? ' colspan=2' : '') . ' align=center class=clearalt6> ' . '<input type=submit name=buttonval value=' . (($_POST['draft'] == 'yes' || $_GET['draft'] == 'yes' || $_GET['draft'] == 1) ? 'Save' : 'Send') . ' class=button></td></tr></table>' . '<input type=hidden name=receiver value=' . ($receiver > 0 ? $receiver : $replyto) . '></form><br><br><br>';
