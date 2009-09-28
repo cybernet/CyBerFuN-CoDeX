@@ -221,12 +221,6 @@ $torrent = str_replace("_", " ", $torrent);
 $nfo = sqlesc(str_replace("\x0d\x0d\x0a", "\x0d\x0a", @file_get_contents($nfofilename)));
 $ret = mysql_query("INSERT INTO torrents (search_text, filename, owner, visible, anonymous, info_hash, name, size, numfiles, type, descr, ori_descr, category, save_as, added, last_action, nfo) VALUES (" .
     implode(",", array_map("sqlesc", array(searchfield("$shortfname $dname $torrent"), $fname, $CURUSER["id"], "no", $anonymous, $infohash, $torrent, $totallen, count($filelist), $type, $descr, $descr, 0 + $_POST["type"], $dname))) . ", '" . get_date_time() . "', '" . get_date_time() . "', $nfo)");
-// //////new torrent upload detail sent to shoutbox//////////
-if ($CURUSER["anonymous"] == 'yes')
-    $message = "New Torrent : [url=$DEFAULTBASEURL/details.php?id=$id] " . safeChar($torrent) . "[/url] Uploaded - Anonymous User";
-else
-    $message = "New Torrent : [url=$DEFAULTBASEURL/details.php?id=$id] " . safeChar($torrent) . "[/url] Uploaded by " . safechar($CURUSER["username"]) . "";
-// ///////////////////////////END///////////////////////////////////
 if (!$ret) {
     if (mysql_errno() == 1062)
         stderr("Error", "torrent already uploaded!");
@@ -256,6 +250,12 @@ if ($CURUSER["anonymous"] == 'yes')
     write_log("torrentupload","Torrent $id ($torrent) was uploaded by Anonymous");
 else
     write_log("torrentupload","Torrent $id ($torrent) was uploaded by $CURUSER[username]");
+// //////new torrent upload detail sent to shoutbox//////////
+if ($CURUSER["anonymous"] == 'yes')
+    $message = "New Torrent : [url=$DEFAULTBASEURL/details.php?id=$id] " . safeChar($torrent) . "[/url] Uploaded - Anonymous User";
+else
+    $message = "New Torrent : [url=$DEFAULTBASEURL/details.php?id=$id] " . safeChar($torrent) . "[/url] Uploaded by " . safechar($CURUSER["username"]) . "";
+// ///////////////////////////END///////////////////////////////////
 // //////new torrent upload detail sent to shoutbox//////////
 autoshout($message);
 // ///////////////////////////end///////////////////////////////////
