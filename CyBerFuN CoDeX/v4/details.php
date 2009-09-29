@@ -420,7 +420,7 @@ else
 &nbsp;&nbsp;Your new ratio if you download this torrent.</td></tr>
 <?php
 }
-// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / start
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / starts
 if ($CURUSER["id"] == $row["owner"]) {
 }
 else {
@@ -440,17 +440,22 @@ else {
             tr("Download", "You are not allowed to download");
         }
         // poster mod //
-        if (!empty($row["poster"]))                                                                                                                                                                           
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / starts
+        if (!empty($row["poster"]))         {                                                                                                                                                                  
         tr("".$language['pos']."", "<a href=\"javascript: klappe_news('a3')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica3".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka3\" style=\"display: none;\"><br><a href='" . safeChar($row["poster"]) . "' rel='lightbox' title='" . CutName(safeChar($row["name"]), 35) . "'><img src='" . safeChar($row["poster"]) . "' border=0 width=150></a></div>", 1);
-		    else
-        tr("".$language['pos']."", "<a href=\"javascript: klappe_news('a3')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica3".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka3\" style=\"display: none;\"><br>Poster Not Available</div>", 1);       
+}
+		    else {
+//        tr("".$language['pos']."", "<a href=\"javascript: klappe_news('a3')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica3".$array['id']."\" alt=\"[Hide/Show]\"></a><div id=\"ka3\" style=\"display: none;\"><br>Poster Not Available</div>", 1);
+               }
+// Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / ends
         // youtube sample //
-        if (!empty($row["tube"]))
-            tr("".$language['sam']."", "<a href=\"javascript: klappe_news('a2')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica2" . $array['id'] . "\" alt=\"[Hide/Show]\"></a><div id=\"ka2\" style=\"display: none;\"><br><embed src='" . str_replace("watch?v=", "v/", htmlspecialchars($row["tube"])) . "' type=\"application/x-shockwave-flash\" width=\"500\" height=\"410\"></embed></div>", 1);
-        else
-            tr("".$language['sam']."", "<a href=\"javascript: klappe_news('a2')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica2" . $array['id'] . "\" alt=\"[Hide/Show]\"></a><div id=\"ka2\" style=\"display: none;\"><br>Sample Not Available</div>", 1);
+        if (!empty($row["tube"])) {
+            tr("".$language['sam']."", "<a href=\"javascript: klappe_news('a2')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica2" . $array['id'] . "\" alt=\"[Hide/Show]\"></a><div id=\"ka2\" style=\"display: none;\"><br><embed src='" . str_replace("watch?v=", "v/", htmlspecialchars($row["tube"])) . "' type=\"application/x-shockwave-flash\" width=\"500\" height=\"410\"></embed></div>", 1); }
+        else {
+//            tr("".$language['sam']."", "<a href=\"javascript: klappe_news('a2')\"><img border=\"0\" src=\"pic/plus.gif\" id=\"pica2" . $array['id'] . "\" alt=\"[Hide/Show]\"></a><div id=\"ka2\" style=\"display: none;\"><br>Sample Not Available</div>", 1);
+}
         // description //
-// Updated By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / start
+// Updated By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / starts
         if ($dtype)
             tr("".$language['desc']."", "".format_comment($row["descr"])."</div>", 1);
         else
@@ -825,7 +830,7 @@ ORDER BY u.username DESC");
 // Mod By CyBerNe7 ( cybernet ) // www.cyberfun.ro / www.xlist.ro / starts
 if ($CURUSER["id"] == $row["owner"]) {
 
-tr("" . $language['report'] . "", "You can't Report your own torrent <img src=\"pic/smilies/laugh.gif\"border=0> for breaking the <a href=rules.php>rules</a>", 1);
+tr("" . $language['report'] . "", "You can't Report your own torrent <img src=\"pic/smilies/laugh.gif\"border=0> for breaking the <a href=rules.php>rules</a></form>", 1);
 
 }
 else 
