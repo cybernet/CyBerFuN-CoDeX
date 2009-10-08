@@ -1,4 +1,8 @@
-<?php
+<?
+
+// CyBerFuN.Ro
+// http://xlist.ro/
+
 ob_start();
 require_once("include/bittorrent.php");
 require_once ("include/user_functions.php");
