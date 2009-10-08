@@ -93,7 +93,7 @@ if ($actiong == "edit") {
     if ($count == 1) {
         $delete = mysql_query("DELETE FROM categories where id=" . sqlesc($catid) . "") or sqlerr(__FILE__, __LINE__);
         if ($delete) {
-            write_log("" . $CURUSER["username"] . " deleted category " . $arr["name"] . "");
+            write_log("log" . $CURUSER["username"] . " deleted category " . $arr["name"] . "");
             stderr("Succes", "Category successfully deleted! Go <a href=\"" . $BASEUL . "/categorie.php\">back</a>");
         }
     } else
