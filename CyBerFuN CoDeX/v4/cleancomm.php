@@ -1,8 +1,11 @@
-<?php
+<?
+
 // CyBerFuN.Ro
 // By CyBerNe7
 //            //
-// www.cyberfun.ro //
+// http://cyberfun.ro/
+// http://xlist.ro/
+
 require_once("include/bittorrent.php");
 require_once ("include/user_functions.php");
 require_once ("include/bbcode_functions.php");
