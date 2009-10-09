@@ -1,4 +1,11 @@
-<?php
+<?
+
+// CyBerFuN.Ro
+// By CyBerNe7
+//            //
+// http://cyberfun.ro/
+// http://xlist.ro/
+
 header("Content-Type: text/html; charset=iso-8859-1");
 require_once("include/bittorrent.php");
 dbconn();

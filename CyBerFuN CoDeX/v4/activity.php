@@ -1,4 +1,11 @@
-<?php
+<?
+
+// CyBerFuN.Ro
+// By CyBerNe7
+//            //
+// http://cyberfun.ro/
+// http://xlist.ro/
+
 // ==nvsource script
 // == slight updates for Tbdev Installer
 require ("include/bittorrent.php");
