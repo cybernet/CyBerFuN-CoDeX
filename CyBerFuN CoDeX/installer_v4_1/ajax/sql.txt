@@ -1,0 +1,22 @@
+CREATE TABLE `chat_msgs` (
+  `id` int(10) NOT NULL auto_increment,
+  `user` int(11) NOT NULL default '0',
+  `body` varchar(320) NOT NULL,
+  `date` int(10) NOT NULL default '0',
+  `room` int(10) NOT NULL default '0',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `chat_rooms`
+-- 
+
+CREATE TABLE `chat_rooms` (
+  `id` int(10) NOT NULL auto_increment,
+  `for_user` int(10) NOT NULL default '0',
+  `by_user` int(10) NOT NULL default '0',
+  `status` enum('open','progress','close') NOT NULL default 'close',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;

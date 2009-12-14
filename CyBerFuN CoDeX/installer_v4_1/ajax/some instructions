@@ -1,0 +1,29 @@
+  <link type="text/css" href="ajax/css/chat.style.css" rel="stylesheet" />
+  <link type="text/css" href="ajax/css/ui.all.css" rel="stylesheet" />
+  <script type="text/javascript" src="ajax/js/jquery.js"></script>
+  <script type="text/javascript" src="ajax/js/chat.core.js"></script>
+  <script type="text/javascript" src="ajax/js/ui.core.js"></script>
+  <script type="text/javascript" src="ajax/js/jquery.corner.js"></script>
+  <script type="text/javascript" src="ajax/js/ui.draggable.js"></script> 
+  <script type="text/javascript">
+	$(document).ready( 
+	function()
+		{
+		chat_alert();
+		global_refresh();
+		}
+	);
+
+
+</script>
+  
+  this are the js and css files for this to work  add this in the head seaction 
+  
+  this is the div where the chat rooms will move  add it after <body>
+  
+<div id="rooms" style="z-index:90;position:absolute"></div>
+
+and this is for your online friends (you may want to take a look at that query cause i din't used any time check on testing)
+
+<img src="ajax/online.png" id="show_online" onclick="friends_online();"  />
+<div id="online_friends" style="display:none;width:120px;z-index:200;position:absolute"></div>

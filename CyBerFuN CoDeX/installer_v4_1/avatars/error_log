@@ -1,0 +1,4 @@
+[08-Oct-2009 17:35:28] PHP Warning:  imagecreatefrompng() [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: '/home/mindless/public_html/avatars/settings/soft.png' is not a valid PNG file in /home/mindless/public_html/avatars/avatar.php on line 82
+[08-Oct-2009 17:35:28] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mindless/public_html/avatars/avatar.php:82) in /home/mindless/public_html/avatars/avatar.php on line 84
+[08-Oct-2009 17:35:28] PHP Warning:  imagepng(): supplied argument is not a valid Image resource in /home/mindless/public_html/avatars/avatar.php on line 90
+[08-Oct-2009 17:35:28] PHP Warning:  imagedestroy(): supplied argument is not a valid Image resource in /home/mindless/public_html/avatars/avatar.php on line 91

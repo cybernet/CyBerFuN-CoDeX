@@ -1,0 +1,56 @@
+<h2><center>Most Games Played</center></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="10"><tr><td align="center">
+<table class="main" border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td class="colhead">Rank</td>
+<td align="left" class="colhead">User</td>
+<td align="right" class="colhead">Wins</td>
+<td align="right" class="colhead">Losses</td>
+<td align="right" class="colhead">Games</td>
+<td align="right" class="colhead">Percentage</td>
+<td align="right" class="colhead">Win/Loss</td>
+</tr>
+</table>
+</td></tr></table>
+<br /><br /><h2><center>Highest Win Percentage</center></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="10"><tr><td align="center">
+<table class="main" border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td class="colhead">Rank</td>
+<td align="left" class="colhead">User</td>
+<td align="right" class="colhead">Wins</td>
+<td align="right" class="colhead">Losses</td>
+<td align="right" class="colhead">Games</td>
+<td align="right" class="colhead">Percentage</td>
+<td align="right" class="colhead">Win/Loss</td>
+</tr>
+</table>
+</td></tr></table>
+<br /><br /><h2><center>Most Credit Won</center></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="10"><tr><td align="center">
+<table class="main" border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td class="colhead">Rank</td>
+<td align="left" class="colhead">User</td>
+<td align="right" class="colhead">Wins</td>
+<td align="right" class="colhead">Losses</td>
+<td align="right" class="colhead">Games</td>
+<td align="right" class="colhead">Percentage</td>
+<td align="right" class="colhead">Win/Loss</td>
+</tr>
+</table>
+</td></tr></table>
+<br /><br /><h2><center>Most Credit Lost</center></h2>
+<table width="100%" border="1" cellspacing="0" cellpadding="10"><tr><td align="center">
+<table class="main" border="1" cellspacing="0" cellpadding="5">
+<tr>
+<td class="colhead">Rank</td>
+<td align="left" class="colhead">User</td>
+<td align="right" class="colhead">Wins</td>
+<td align="right" class="colhead">Losses</td>
+<td align="right" class="colhead">Games</td>
+<td align="right" class="colhead">Percentage</td>
+<td align="right" class="colhead">Win/Loss</td>
+</tr>
+</table>
+</td></tr></table>
