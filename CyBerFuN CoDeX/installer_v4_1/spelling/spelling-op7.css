@@ -1,0 +1,15 @@
+.body          {font-size : 11px; font-family: Verdana,Arial,Helvetica; background-color:#DEE3E7;}
+.main          {font-size : 12px; font-family: Courier, monospace; word-wrap:break-word; word-break: break-all;}
+.Text          {font-size : 11px; font-family: Verdana,Arial,Helvetica; }
+.Title         {font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif; font-size : 22px; font-weight : bold; text-decoration :: none; line-height : 120%; color : #006699; }
+.toprowcolor   {background-color:#1F7FB0}
+.toprowtext    {color:#ffffff;font-size : 11px; font-family: Verdana;}
+.slct          {font-size:7pt;font-family:Verdana,Arial,Helvetica;color:#000000;width:108px;background:#ffffff;border-style:solid;border-width:1;border-color:#000000;}
+.clbuttonsmall {font-size:7pt;font-family:Verdana,Arial,Helvetica;color:#006699;height:15px;width:70px;background:#dcdcdc;border-style:solid;border-width:1;border-color:#000000;font-weight:bold;}
+.clbuttonall   {font-size:7pt;font-family:Verdana,Arial,Helvetica;color:#006699;height:15px;width:36px;background:#dcdcdc;border-style:solid;border-width:1;border-color:#000000;font-weight:bold;}
+.clbutton      {font-size:7pt;font-family:Verdana,Arial,Helvetica;color:#006699;height:15px;width:108px;background:#dcdcdc;border-style:solid;border-width:1;border-color:#000000;font-weight:bold;}
+.cltext      {font-size:7pt;font-family:Verdana,Arial,Helvetica;color:#006699;height:15px;width:108px;background:#dcdcdc;border-style:solid;border-width:1;border-color:#000000;font-weight:bold;}
+.clbuttonhalf  {font-size:7pt;font-family:Verdana,Arial,Helvetica;color:#006699;height:15px;width:53px;background:#dcdcdc;border-style:solid;border-width:1;border-color:#000000;font-weight:bold;}
+.row2          {background-color:#DEE3E7;}
+.crowtext      {color:#cccccc;font-size : 11px; font-family: Verdana;}
+.hiddentext    {font-size: 1px; visibility: hidden;}

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+     <title>phpSpell</title>
+     <script language="javascript" src="spelling.js"></script>
+     <script language="javascript">
+       function Can_Start_Spellchecker()
+       {
+         if (op6 || op7) setTimeout('Start_Spellchecker();', 500);
+         else Start_Spellchecker();
+       }
+     </script>
+     <link rel=stylesheet href='spelling-op.css' type='text/css'>
+
+</head>
+
+<body bgcolor="#ffffff" class="bodyclass" topmargin=0 leftmargin=0 marginheight=0 marginwidth=0 onload="Can_Start_Spellchecker();">
+<table width="500" border="0" cellspacing="0" cellpadding="0" align="center">
+<tr>
+        <td colspan="2" background="titlebgd.gif">
+        <img src="titlebgd.gif" width="3" height="51" border="0" alt="" align="absmiddle"><span class="Title">phpSpell<br></span>
+        </td>
+</tr>
+<tr>
+        <td colspan="2">
+        <table width="550" border="0" cellspacing="1" cellpadding="0" align="center" bgcolor="#000000">
+        <TR>
+        <td class="toprowcolor" colspan="2">
+        <table width="550" border="0" cellspacing="0" cellpadding="4" align="center">
+        <TR>
+        <script language="javascript">
+          DocOutput = "about:blank";
+          if (op7) DocOutput = "blank.html";
+          document.write('<td class="toprowcolor"><iframe src="'+DocOutput+'" scrolling="no" name="ispellheader" id="ispellheader" width="100%" height=16 marginwidth="0" marginheight="0" frameborder="0"></iframe></td>');
+          document.write('</tr></table><tr>');
+          document.write('<td width=400><iframe src="'+DocOutput+'" name="ispellcheck" id="ispellcheck" width="400" height="300" marginwidth="0" marginheight="0" frameborder="0" bgcolor=#ffffff></iframe></td>');
+          document.write('<td width=150><iframe src="'+DocOutput+'" name="ioptions" id="ioptions" width="150" height="300" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" bgcolor="white"></iframe></td>');
+        </script>
+        </tr>
+        </table>
+        </td>
+</tr>
+<tr class="toprowcolor"><td><a href="http://www.master-technology.com/demos/spell" target="_blank"><span class="crowtext">&nbsp;(c)Copyright 2002-2008, Team phpSpell.</span></a></td>
+</table>
+</form>
+</body>
+</html>
+
