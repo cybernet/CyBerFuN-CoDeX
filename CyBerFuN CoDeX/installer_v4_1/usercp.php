@@ -16,8 +16,11 @@ header("HTTP/1.0 404 Not Found");
 echo("<html><h1>Not Found</h1><p>The requested URL /{$_SERVER['PHP_SELF']} was not found on this server.</p><hr /><address>Apache/1.1.11 ".$SITENAME." Server at ".$_SERVER['SERVER_NAME']." Port 80</address></body></html>\n");
 die();
 }
-
-if ($usergroups['canusercp'] == 'no' OR $usergroups['canusercp'] != 'yes') {
+// even in the database you are allowed to change your profile
+// you stil couldn't because the error ...
+// cybernet2u
+// http://xList.ro/
+if ($usergroups['canusercp'] == 'no') {
 	stderr( "Sorry...", "You are not allowed to edit your profile" );
 	exit;
 	}
