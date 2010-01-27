@@ -3,6 +3,27 @@ define( 'IN_ANNOUNCE', true );
 require_once ( "include/bittorrent.php" );
 require_once ( "include/benc.php" );
 
+// Bug fixed - tracker send invalid data
+// cybernet2u
+// http://xList.ro/
+// http://cyberfun.ro/
+// http://tracker.cyberfun.ro/
+
+if (!function_exists('getallheaders'))
+{
+    function getallheaders()
+    {
+       foreach ($_SERVER as $name => $value)
+       {
+           if (substr($name, 0, 5) == 'HTTP_')
+           {
+               $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+           }
+       }
+       return $headers;
+    }
+}
+
 //=== bad stuff let's just kill this right off
 $headers = getallheaders();
 if (isset($headers['Cookie']) || isset($headers['Accept-Language']) || isset($headers['Accept-Charset']))
