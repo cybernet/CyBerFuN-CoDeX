@@ -1,4 +1,11 @@
 <?php
+
+// CyBerFuN.Ro
+// By cybernet2u
+// http://xList.ro/
+// http://cyberfun.ro/
+// http://tracker.cyberfun.ro/
+
 define( 'IN_ANNOUNCE', true );
 require_once ( "include/bittorrent.php" );
 require_once ( "include/benc.php" );
