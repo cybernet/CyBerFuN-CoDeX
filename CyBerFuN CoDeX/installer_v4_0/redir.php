@@ -13,11 +13,11 @@ elseif (substr($url, 0, 8) == "https://") $url = $url;
 elseif (substr($url, 0, 6) == "ftp://") $url = $url;
 else $url = "http://" . $url;
 
-if (substr($url, 0, 22) == "http://yoursite.org")
+if (substr($url, 0, 22) == "http://codex.xlist.ro")
     print("<html><head><meta http-equiv=refresh content='0;url=$url'></head><body>\n");
-elseif (substr($url, 0, 23) == "https://yoursite.org")
+elseif (substr($url, 0, 23) == "https://codex.xlist.ro")
     print("<html><head><meta http-equiv=refresh content='0;url=$url'></head><body>\n");
-elseif (substr($url, 0, 21) == "ftp://yoursite.org")
+elseif (substr($url, 0, 21) == "ftp://codex.xlist.ro")
     print("<html><head><meta http-equiv=refresh content='0;url=$url'></head><body>\n");
 else
     print("<html><head><meta http-equiv=refresh content='0;url=http://anonym.to/?$url'></head><body>\n");
