@@ -358,7 +358,7 @@ if ( !isset( $self ) ) {
     }
         if ( $upthis > 0 || $downthis > 0 )
         {
-        if (!($free_for_all || $torrent["countstats"]=='no' || ($pq && $arrfs["free"] == 'yes'))) // is it a non free torrent
+        if (!($free_for_all || $torrent["countstats"] == 'no' || ($pq && $arrfs["free"] == 'yes'))) // is it a non free torrent
         $updq[0] = "downloaded = downloaded + $downthis";
         $updq[1] = "uploaded = uploaded + " . (($arrfs['doubleup'] == 'yes' || $double_for_all)  ? ($upthis * 2) : $upthis);
         $udq = implode(',', $updq);
@@ -378,8 +378,7 @@ if ( !isset( $self ) ) {
                     $rate = prefixed( $rate );
                     $client = $agent;
                     $userip = getip();
-                    auto_enter_cheater( $userid, $rate, $upthis, $diff, $torrentid, $client, $userip,
-                        $last_up );
+                    auto_enter_cheater( $userid, $rate, $upthis, $diff, $torrentid, $client, $userip, $last_up );
                     $modcomment = gmdate( "Y-m-d" ) . " Warned and download disabled for possible ratio cheating at high upload speeds\n" . $arr['modcomment'];
                     sql_query( "UPDATE users set warned='yes', downloadpos='no', modcomment = " .
                         sqlesc( $modcomment ) . " WHERE id=$userid" ) or sqlerr( __file__, __line__ );
